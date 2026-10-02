@@ -1,6 +1,141 @@
 {
+  "DevOps": {
+    "title": "DevOps Engineer",
+    "badge": "DevOps",
+    "icon": "⚙️",
+    "short_desc": "Automates deployment pipelines, cloud infrastructure, and CI/CD reliability.",
+    "description": "DevOps Engineers bridge the gap between software development and IT operations by automating builds, tests, cloud infrastructure provisioning, and continuous deployment pipelines. They maintain high availability, scale containerized microservices with Kubernetes, manage Infrastructure as Code with Terraform, and monitor system health with Prometheus and Grafana.",
+    "required_skills": [
+      "Git",
+      "Linux",
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "Terraform",
+      "AWS",
+      "Prometheus/Grafana"
+    ],
+    "core_skills": [
+      "Git",
+      "Linux",
+      "Docker",
+      "CI/CD"
+    ],
+    "advanced_skills": [
+      "Kubernetes",
+      "Terraform",
+      "AWS",
+      "Prometheus/Grafana"
+    ]
+  },
+  "CyberSec": {
+    "title": "Cybersecurity Specialist",
+    "badge": "CyberSec",
+    "icon": "🛡️",
+    "short_desc": "Defends enterprise systems, mitigates vulnerabilities, and enforces Zero Trust security.",
+    "description": "Cybersecurity Specialists protect enterprise networks, cloud workloads, and sensitive student/enterprise data against modern cyber threats. They conduct ethical penetration testing, implement cryptographic protocols, harden Linux operating systems, design Zero Trust access controls, and manage identity policies using AWS IAM.",
+    "required_skills": [
+      "Linux",
+      "TCP/IP",
+      "Network Security",
+      "Web Security",
+      "Penetration Testing",
+      "Cryptography",
+      "Zero Trust",
+      "AWS IAM"
+    ],
+    "core_skills": [
+      "Linux",
+      "TCP/IP",
+      "Network Security",
+      "Web Security"
+    ],
+    "advanced_skills": [
+      "Penetration Testing",
+      "Cryptography",
+      "Zero Trust",
+      "AWS IAM"
+    ]
+  },
+  "Data Sci": {
+    "title": "Data Scientist",
+    "badge": "Data Sci",
+    "icon": "📊",
+    "short_desc": "Extracts insights from large-scale data using statistical modeling and machine learning.",
+    "description": "Data Scientists build machine learning models, statistical inference engines, and predictive analytics pipelines to transform raw data into high-impact strategic decisions. They specialize in feature engineering, supervised/unsupervised learning with Scikit-learn, deep neural architectures with PyTorch, and exploratory data analysis using Pandas and SQL.",
+    "required_skills": [
+      "Python",
+      "SQL",
+      "Pandas",
+      "Statistics",
+      "Machine Learning",
+      "Scikit-learn",
+      "Deep Learning",
+      "PyTorch"
+    ],
+    "core_skills": [
+      "Python",
+      "SQL",
+      "Pandas",
+      "Statistics"
+    ],
+    "advanced_skills": [
+      "Machine Learning",
+      "Scikit-learn",
+      "Deep Learning",
+      "PyTorch"
+    ]
+  },
+  "PM": {
+    "title": "Product Manager",
+    "badge": "PM",
+    "icon": "📋",
+    "short_desc": "Drives product strategy, sprint roadmaps, user research, and technical execution.",
+    "description": "Tech Product Managers align technical architecture with user needs and business strategy. They define product visions, conduct qualitative and quantitative user research, prioritize sprint backlogs with Agile/Scrum methodologies, analyze product usage telemetry with SQL, and communicate technical trade-offs across multidisciplinary squads.",
+    "required_skills": [
+      "Agile",
+      "Scrum",
+      "Product Roadmapping",
+      "User Research",
+      "Data Analytics",
+      "System Design",
+      "SQL",
+      "Git"
+    ],
+    "core_skills": [
+      "Agile",
+      "Scrum",
+      "Product Roadmapping",
+      "User Research"
+    ],
+    "advanced_skills": [
+      "Data Analytics",
+      "System Design",
+      "SQL",
+      "Git"
+    ]
+  },
   "Backend / Distributed Systems Engineer": {
+    "title": "Backend / Distributed Systems Engineer",
+    "badge": "Backend",
+    "icon": "🖥️",
     "description": "Engineers high-throughput backend services, microservices architecture, distributed databases, caching, and message queues.",
+    "short_desc": "Engineers high-throughput backend services, distributed systems, and databases.",
+    "required_skills": [
+      "Python",
+      "Go",
+      "Data Structures",
+      "Algorithms",
+      "SQL",
+      "PostgreSQL",
+      "REST APIs",
+      "Docker",
+      "Distributed Systems",
+      "gRPC",
+      "Kafka",
+      "Redis",
+      "Kubernetes"
+    ],
     "core_skills": [
       "Python",
       "Go",
@@ -22,31 +157,26 @@
       "Rate Limiting"
     ]
   },
-  "AI / Data Engineer": {
-    "description": "Architects data pipelines, ETL infrastructure, MLOps, deep learning model deployments, and generative AI systems.",
-    "core_skills": [
-      "Python",
-      "Data Structures",
-      "SQL",
-      "Machine Learning",
-      "Scikit-learn",
-      "Pandas",
-      "Feature Engineering"
-    ],
-    "advanced_skills": [
-      "PyTorch",
-      "Deep Learning",
-      "Transformers",
-      "Apache Airflow",
-      "PySpark",
-      "LLMs",
-      "LangChain",
-      "MLOps",
-      "ETL Pipelines"
-    ]
-  },
   "Full-Stack Web Architect": {
+    "title": "Full-Stack Web Architect",
+    "badge": "Full-Stack",
+    "icon": "🌐",
     "description": "Designs end-to-end modern web applications, combining frontend client applications with robust backend APIs and cloud deployment.",
+    "short_desc": "Designs modern web apps, frontend clients, APIs, and cloud deployments.",
+    "required_skills": [
+      "TypeScript",
+      "React",
+      "Node.js",
+      "HTML/CSS",
+      "REST APIs",
+      "SQL",
+      "PostgreSQL",
+      "Next.js",
+      "GraphQL",
+      "System Design",
+      "CI/CD",
+      "Docker"
+    ],
     "core_skills": [
       "TypeScript",
       "React",
@@ -65,27 +195,6 @@
       "Docker",
       "Redis",
       "Domain-Driven Design"
-    ]
-  },
-  "Cloud & Cybersecurity Engineer": {
-    "description": "Secures cloud infrastructure, implements Zero-Trust network security, automates IaC, and performs vulnerability assessments.",
-    "core_skills": [
-      "TCP/IP",
-      "Linux",
-      "Python",
-      "Docker",
-      "AWS",
-      "Web Security",
-      "OAuth2/JWT"
-    ],
-    "advanced_skills": [
-      "Terraform",
-      "Zero Trust",
-      "Kubernetes Security",
-      "Penetration Testing",
-      "Cryptography",
-      "AWS IAM",
-      "Container Security"
     ]
   }
 }

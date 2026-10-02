@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 from services.data_loader import load_courses, load_careers, get_universities, get_all_skills
 from services.gemini_service import compare_universities, analyze_career_gap_and_plan
 from schemas.output_schema import CareerPlanAnalysisResult, UniversityComparisonResult
+from frontend.elective_navigator import render_elective_navigator
 
 load_dotenv()
 
@@ -210,13 +211,15 @@ careers = load_careers()
 universities = get_universities()
 all_skills = get_all_skills()
 
-# Initialize Session State for One-Click Demo Presets
+# Initialize Session State for Elective Navigator & Demo Presets
 if "user_skills" not in st.session_state:
-    st.session_state["user_skills"] = ["Python", "Data Structures", "Algorithms", "SQL", "PostgreSQL"]
+    st.session_state["user_skills"] = ["C++", "Python", "SQL", "Git"]
 if "selected_career" not in st.session_state:
-    st.session_state["selected_career"] = "Backend / Distributed Systems Engineer"
+    st.session_state["selected_career"] = "DevOps"
+if "selected_university" not in st.session_state:
+    st.session_state["selected_university"] = universities[0] if universities else "University A"
 if "selected_uni" not in st.session_state:
-    st.session_state["selected_uni"] = "Chulalongkorn University"
+    st.session_state["selected_uni"] = st.session_state["selected_university"]
 
 # Sidebar Setup
 with st.sidebar:
@@ -230,25 +233,48 @@ with st.sidebar:
     st.markdown("#### ⚡ One-Click Demo Presets")
     st.caption("Select a persona to instantly configure the prototype for judging:")
     
-    demo_p1 = st.button("🧑‍🎓 Pre-Uni Senior: AI & Data", use_container_width=True)
+    demo_p1 = st.button("⚙️ DevOps (Git, Linux, Docker)", use_container_width=True)
     if demo_p1:
-        st.session_state["selected_career"] = "AI / Data Engineer"
-        st.session_state["selected_uni"] = "Chulalongkorn University"
-        st.session_state["user_skills"] = ["Python", "Basic Algorithms"]
+        st.session_state["selected_career"] = "DevOps"
+        st.session_state["selected_university"] = "University A"
+        st.session_state["selected_uni"] = "University A"
+        st.session_state["skills_text_input"] = "git, linux, docker, c++"
+        st.session_state["user_skills"] = ["Git", "Linux", "Docker", "C++"]
+        st.session_state["has_generated_careers"] = True
+        st.session_state["navigator_active_tab"] = "💼 1. Career Paths"
         st.rerun()
 
-    demo_p2 = st.button("💻 Undergrad Yr 2: Distributed Backend", use_container_width=True)
+    demo_p2 = st.button("🛡️ Cybersecurity (Linux, TCP/IP)", use_container_width=True)
     if demo_p2:
-        st.session_state["selected_career"] = "Backend / Distributed Systems Engineer"
-        st.session_state["selected_uni"] = "Chulalongkorn University"
-        st.session_state["user_skills"] = ["Python", "C++", "Data Structures", "Algorithms", "SQL", "PostgreSQL"]
+        st.session_state["selected_career"] = "CyberSec"
+        st.session_state["selected_university"] = "University A"
+        st.session_state["selected_uni"] = "University A"
+        st.session_state["skills_text_input"] = "linux, tcp/ip, web security"
+        st.session_state["user_skills"] = ["Linux", "TCP/IP", "Web Security"]
+        st.session_state["has_generated_careers"] = True
+        st.session_state["navigator_active_tab"] = "💼 1. Career Paths"
         st.rerun()
 
-    demo_p3 = st.button("🌐 Undergrad Yr 3: Full-Stack Architect", use_container_width=True)
+    demo_p3 = st.button("📊 Data Science (Python, SQL, Pandas)", use_container_width=True)
     if demo_p3:
-        st.session_state["selected_career"] = "Full-Stack Web Architect"
-        st.session_state["selected_uni"] = "KMUTT"
-        st.session_state["user_skills"] = ["TypeScript", "React", "Node.js", "HTML/CSS", "REST APIs"]
+        st.session_state["selected_career"] = "Data Sci"
+        st.session_state["selected_university"] = "University B"
+        st.session_state["selected_uni"] = "University B"
+        st.session_state["skills_text_input"] = "python, sql, pandas, statistics"
+        st.session_state["user_skills"] = ["Python", "SQL", "Pandas", "Statistics"]
+        st.session_state["has_generated_careers"] = True
+        st.session_state["navigator_active_tab"] = "💼 1. Career Paths"
+        st.rerun()
+
+    demo_p4 = st.button("📋 Tech PM (Agile, Scrum, Git)", use_container_width=True)
+    if demo_p4:
+        st.session_state["selected_career"] = "PM"
+        st.session_state["selected_university"] = "University B"
+        st.session_state["selected_uni"] = "University B"
+        st.session_state["skills_text_input"] = "agile, scrum, git, marketing"
+        st.session_state["user_skills"] = ["Agile", "Scrum", "Git", "Marketing"]
+        st.session_state["has_generated_careers"] = True
+        st.session_state["navigator_active_tab"] = "💼 1. Career Paths"
         st.rerun()
 
     st.divider()
@@ -274,35 +300,20 @@ with st.sidebar:
     - **Schema Enforced**: Strict Pydantic v2 JSON outputs.
     """)
 
-# Top Hero Section
-st.markdown("""
-<div class="hero-container">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start;">
-        <div>
-            <div class="hero-title">EduPath Concierge 🎓</div>
-            <div class="hero-subtitle">
-                Bridging the gap between university syllabi and industry competencies through long-context AI.
-                Compare university curriculums side-by-side or diagnose personal skill gaps into actionable prerequisite-aware study roadmaps.
-            </div>
-        </div>
-    </div>
-    <div class="cap-badge-container">
-        <span class="cap-badge">🧠 1. Remember (Profile Retention)</span>
-        <span class="cap-badge">📖 2. Understand (Deep Syllabus)</span>
-        <span class="cap-badge">🔗 3. Connect (Job Taxonomy)</span>
-        <span class="cap-badge">⚡ 4. Retrieve (Prerequisite Integrity)</span>
-        <span class="cap-badge">⚖️ 5. Reason (Quantitative Gap)</span>
-        <span class="cap-badge">🚀 6. Act (Interactive Roadmap & .ics)</span>
-    </div>
-</div>
-""", unsafe_allow_html=True)
+# Keep university selection in sync
+if "selected_university" in st.session_state:
+    st.session_state["selected_uni"] = st.session_state["selected_university"]
 
-# Main Navigation Tabs
-tab_compare, tab_planner, tab_explorer = st.tabs([
-    "🏛️ Tab 1: Cross-University Head-to-Head Arena",
-    "🎯 Tab 2: Skill-Gap Diagnostic & Elective Navigator",
-    "🔍 Tab 3: Curriculum & Career Taxonomy Explorer"
+# Main Navigation Tabs with Elective Navigator as primary tab
+tab_navigator, tab_compare, tab_planner, tab_explorer = st.tabs([
+    "🧭 Elective Navigator",
+    "🏛️ Cross-University Matchup Arena",
+    "🎯 Skill-Gap AI Diagnostic & Roadmap",
+    "🔍 Curriculum & Career Taxonomy Explorer"
 ])
+
+with tab_navigator:
+    render_elective_navigator()
 
 
 # =========================================================================
@@ -313,11 +324,14 @@ with tab_compare:
     st.write("Compare how two universities prepare students for your target career role based on complete course descriptions and electives.")
 
     c1, c2, c3 = st.columns(3)
+    career_keys_tab1 = list(careers.keys())
+    sel_car_t1 = st.session_state.get("selected_career", career_keys_tab1[0])
+    idx_t1 = career_keys_tab1.index(sel_car_t1) if sel_car_t1 in career_keys_tab1 else 0
     with c1:
         target_career_tab1 = st.selectbox(
             "Target Tech Career",
-            options=list(careers.keys()),
-            index=list(careers.keys()).index(st.session_state.get("selected_career", list(careers.keys())[0])),
+            options=career_keys_tab1,
+            index=idx_t1,
             key="tab1_target_career"
         )
     with c2:
@@ -432,16 +446,21 @@ with tab_planner:
         
         prof_col1, prof_col2 = st.columns(2)
         with prof_col1:
+            sel_uni_t2 = st.session_state.get("selected_uni", universities[0])
+            uni_idx_t2 = universities.index(sel_uni_t2) if sel_uni_t2 in universities else 0
             current_uni = st.selectbox(
                 "Current University",
                 options=universities,
-                index=universities.index(st.session_state.get("selected_uni", universities[0])),
+                index=uni_idx_t2,
                 key="tab2_current_uni"
             )
+            career_keys_t2 = list(careers.keys())
+            sel_car_t2 = st.session_state.get("selected_career", career_keys_t2[0])
+            car_idx_t2 = career_keys_t2.index(sel_car_t2) if sel_car_t2 in career_keys_t2 else 0
             target_career = st.selectbox(
                 "Target Tech Career",
-                options=list(careers.keys()),
-                index=list(careers.keys()).index(st.session_state.get("selected_career", list(careers.keys())[0])),
+                options=career_keys_t2,
+                index=car_idx_t2,
                 key="tab2_target_career"
             )
             

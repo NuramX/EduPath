@@ -20,8 +20,11 @@ def load_careers() -> Dict[str, Any]:
 
 def get_universities() -> List[str]:
     courses = load_courses()
-    unis = sorted(list(set(c["university"] for c in courses if "university" in c)))
-    return unis
+    unis = list(dict.fromkeys(c["university"] for c in courses if "university" in c))
+    # Keep University A, University B first if present
+    preferred_order = ["University A", "University B", "Chulalongkorn University", "KMUTT"]
+    sorted_unis = [u for u in preferred_order if u in unis] + [u for u in sorted(unis) if u not in preferred_order]
+    return sorted_unis
 
 def get_all_skills() -> List[str]:
     courses = load_courses()
@@ -31,6 +34,8 @@ def get_all_skills() -> List[str]:
         for s in c.get("skills_covered", []):
             skills.add(s)
     for role, data in careers.items():
+        for s in data.get("required_skills", []):
+            skills.add(s)
         for s in data.get("core_skills", []):
             skills.add(s)
         for s in data.get("advanced_skills", []):
