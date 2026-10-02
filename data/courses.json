@@ -1,0 +1,242 @@
+[
+  {
+    "course_id": "CU-CS101",
+    "course_name": "Computer Programming Fundamentals",
+    "university": "Chulalongkorn University",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "Introduction to programming concepts using Python and C++. Fundamental data types, control flows, functions, basic OOP, and algorithmic problem-solving techniques.",
+    "skills_covered": ["Python", "C++", "OOP", "Basic Algorithms"]
+  },
+  {
+    "course_id": "CU-CS201",
+    "course_name": "Data Structures & Algorithm Analysis",
+    "university": "Chulalongkorn University",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": ["Computer Programming Fundamentals"],
+    "syllabus_description": "Arrays, Linked Lists, Stacks, Queues, Trees, Hash Tables, Graphs, Searching, Sorting, Time & Space Complexity Analysis (Big-O notation).",
+    "skills_covered": ["Data Structures", "Algorithms", "Big-O Analysis", "Graph Theory"]
+  },
+  {
+    "course_id": "CU-CS301",
+    "course_name": "Database System Concepts & SQL",
+    "university": "Chulalongkorn University",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": ["Data Structures & Algorithm Analysis"],
+    "syllabus_description": "Relational Database Management Systems (RDBMS), ER Modeling, Normalization, SQL query optimization, Transactions, ACID properties, and indexing.",
+    "skills_covered": ["PostgreSQL", "SQL", "Database Design", "Transactions", "ACID"]
+  },
+  {
+    "course_id": "CU-CS302",
+    "course_name": "Computer Networks & Internet Protocols",
+    "university": "Chulalongkorn University",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": ["Computer Programming Fundamentals"],
+    "syllabus_description": "OSI model, TCP/IP stack, socket programming, routing algorithms, DNS, HTTP/HTTPS, TLS security, and network performance tuning.",
+    "skills_covered": ["TCP/IP", "HTTP", "Socket Programming", "DNS", "TLS/SSL"]
+  },
+  {
+    "course_id": "CU-CS401",
+    "course_name": "Distributed Systems & Cloud Architecture",
+    "university": "Chulalongkorn University",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": ["Computer Networks & Internet Protocols", "Database System Concepts & SQL"],
+    "syllabus_description": "Distributed computing, RPC/gRPC, consensus algorithms (Raft/Paxos), message queues (Kafka, RabbitMQ), microservices architecture, and Docker/Kubernetes deployment.",
+    "skills_covered": ["Distributed Systems", "gRPC", "Kafka", "Docker", "Kubernetes", "Microservices"]
+  },
+  {
+    "course_id": "CU-CS402",
+    "course_name": "High-Performance Backend Engineering",
+    "university": "Chulalongkorn University",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": ["Database System Concepts & SQL"],
+    "syllabus_description": "Caching strategies (Redis), concurrency patterns (Golang channels/AsyncIO), connection pooling, rate limiting, and backend API design with Go & FastAPI.",
+    "skills_covered": ["Go", "FastAPI", "Redis", "Concurrency", "API Design", "Rate Limiting"]
+  },
+  {
+    "course_id": "CU-AI301",
+    "course_name": "Applied Machine Learning & Data Mining",
+    "university": "Chulalongkorn University",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": ["Data Structures & Algorithm Analysis"],
+    "syllabus_description": "Supervised & Unsupervised learning, Linear Models, Decision Trees, SVM, Random Forests, Scikit-learn, Feature Engineering, and Model Evaluation metrics.",
+    "skills_covered": ["Python", "Scikit-learn", "Machine Learning", "Feature Engineering", "Pandas"]
+  },
+  {
+    "course_id": "CU-AI401",
+    "course_name": "Deep Learning & Neural Networks",
+    "university": "Chulalongkorn University",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": ["Applied Machine Learning & Data Mining"],
+    "syllabus_description": "Neural Network architectures, Backpropagation, CNNs, RNNs/Transformers, PyTorch framework, GPU acceleration, and fine-tuning pretrained models.",
+    "skills_covered": ["PyTorch", "Deep Learning", "Transformers", "CNN", "GPU Computing"]
+  },
+  {
+    "course_id": "CU-AI402",
+    "course_name": "Big Data Pipeline & Data Engineering",
+    "university": "Chulalongkorn University",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": ["Database System Concepts & SQL"],
+    "syllabus_description": "ETL pipeline orchestration with Apache Airflow, distributed processing with PySpark, data lakehouses (Delta Lake), and real-time streaming.",
+    "skills_covered": ["Apache Airflow", "PySpark", "ETL Pipelines", "Data Warehousing", "Big Data"]
+  },
+  {
+    "course_id": "CU-FE201",
+    "course_name": "Web Development & Frontend Systems",
+    "university": "Chulalongkorn University",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": ["Computer Programming Fundamentals"],
+    "syllabus_description": "Modern frontend development using TypeScript, React.js, Next.js, HTML5/CSS3, State Management (Zustand/Redux), and RESTful API integration.",
+    "skills_covered": ["TypeScript", "React", "Next.js", "HTML/CSS", "REST APIs"]
+  },
+  {
+    "course_id": "CU-SE401",
+    "course_name": "Software Architecture & System Design",
+    "university": "Chulalongkorn University",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": ["Web Development & Frontend Systems"],
+    "syllabus_description": "Design patterns, Domain-Driven Design (DDD), Clean Architecture, CI/CD pipelines (GitHub Actions), unit testing, and system design case studies.",
+    "skills_covered": ["System Design", "Domain-Driven Design", "CI/CD", "GitHub Actions", "Unit Testing"]
+  },
+  {
+    "course_id": "CU-SEC401",
+    "course_name": "Cybersecurity & Web Security",
+    "university": "Chulalongkorn University",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": ["Computer Networks & Internet Protocols"],
+    "syllabus_description": "OWASP Top 10 vulnerabilities, Penetration Testing, Cryptography, OAuth2/JWT authentication, IAM, and Security Auditing.",
+    "skills_covered": ["Web Security", "OWASP", "OAuth2/JWT", "Cryptography", "Penetration Testing"]
+  },
+  {
+    "course_id": "KM-CPE101",
+    "course_name": "Programming Fundamentals & Problem Solving",
+    "university": "KMUTT",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "Hands-on programming logic with C and Python. Flowcharts, recursion, memory layout, pointers, and problem-solving exercises.",
+    "skills_covered": ["C", "Python", "Problem Solving", "Memory Management"]
+  },
+  {
+    "course_id": "KM-CPE201",
+    "course_name": "Advanced Data Structures & Algorithms",
+    "university": "KMUTT",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": ["Programming Fundamentals & Problem Solving"],
+    "syllabus_description": "Object-oriented implementation of Trees, Heaps, Disjoint Sets, Graph algorithms (Dijkstra, A*), Dynamic Programming, and Competitive Programming practice.",
+    "skills_covered": ["C++", "Data Structures", "Dynamic Programming", "Graph Algorithms"]
+  },
+  {
+    "course_id": "KM-CPE301",
+    "course_name": "Database Architecture & NoSQL Systems",
+    "university": "KMUTT",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": ["Advanced Data Structures & Algorithms"],
+    "syllabus_description": "Relational DB vs NoSQL DB (MongoDB, Cassandra, Redis). Schema design, sharding, replication, CAP theorem, and SQL query tuning.",
+    "skills_covered": ["MongoDB", "PostgreSQL", "NoSQL", "CAP Theorem", "Sharding"]
+  },
+  {
+    "course_id": "KM-CPE302",
+    "course_name": "Computer Networks & Cloud Infrastructure",
+    "university": "KMUTT",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": ["Programming Fundamentals & Problem Solving"],
+    "syllabus_description": "Network fundamentals, AWS/GCP cloud services (EC2, S3, VPC), Terraform Infrastructure as Code (IaC), and containerization with Docker.",
+    "skills_covered": ["AWS", "Terraform", "Docker", "Network Security", "Cloud Computing"]
+  },
+  {
+    "course_id": "KM-CPE401",
+    "course_name": "Cloud-Native & Microservice Development",
+    "university": "KMUTT",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": ["Computer Networks & Cloud Infrastructure", "Database Architecture & NoSQL Systems"],
+    "syllabus_description": "Microservices with Go and Node.js, event-driven architecture with RabbitMQ, Kubernetes orchestration, Prometheus & Grafana monitoring.",
+    "skills_covered": ["Go", "Node.js", "Kubernetes", "RabbitMQ", "Grafana/Prometheus", "Microservices"]
+  },
+  {
+    "course_id": "KM-CPE402",
+    "course_name": "Scalable Backend & Distributed Databases",
+    "university": "KMUTT",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": ["Database Architecture & NoSQL Systems"],
+    "syllabus_description": "Building high-concurrency services, Redis caching patterns, CockroachDB distributed SQL, load balancing with NGINX, and performance benchmarking.",
+    "skills_covered": ["Go", "Redis", "Distributed Databases", "NGINX", "Load Balancing"]
+  },
+  {
+    "course_id": "KM-AI301",
+    "course_name": "Foundations of Artificial Intelligence",
+    "university": "KMUTT",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": ["Advanced Data Structures & Algorithms"],
+    "syllabus_description": "Search algorithms, knowledge representation, statistical machine learning models, Naive Bayes, Logistic Regression, and evaluation metrics.",
+    "skills_covered": ["Python", "Machine Learning", "Scikit-learn", "Statistics"]
+  },
+  {
+    "course_id": "KM-AI401",
+    "course_name": "Generative AI & LLM Systems Engineering",
+    "university": "KMUTT",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": ["Foundations of Artificial Intelligence"],
+    "syllabus_description": "Building LLM applications, Prompt Engineering, Retrieval-Augmented Generation (RAG) pipelines, LangChain/LlamaIndex, and fine-tuning open models.",
+    "skills_covered": ["Python", "LLMs", "LangChain", "Prompt Engineering", "Fine-Tuning"]
+  },
+  {
+    "course_id": "KM-AI402",
+    "course_name": "Data Engineering & MLOps Pipelines",
+    "university": "KMUTT",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": ["Database Architecture & NoSQL Systems"],
+    "syllabus_description": "Data pipelines with Airflow, ML model tracking with MLflow, feature stores, automated retraining, and model deployment on Cloud APIs.",
+    "skills_covered": ["Apache Airflow", "MLflow", "MLOps", "Data Pipelines", "Docker"]
+  },
+  {
+    "course_id": "KM-FE201",
+    "course_name": "Full-Stack Web Engineering",
+    "university": "KMUTT",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": ["Programming Fundamentals & Problem Solving"],
+    "syllabus_description": "Full-stack development using Node.js, Express, React, TypeScript, GraphQL, and modern web deployment platforms (Vercel, Docker).",
+    "skills_covered": ["TypeScript", "React", "Node.js", "Express", "GraphQL"]
+  },
+  {
+    "course_id": "KM-SE401",
+    "course_name": "Enterprise Software Engineering & DevOps",
+    "university": "KMUTT",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": ["Full-Stack Web Engineering"],
+    "syllabus_description": "DevOps practices, CI/CD with GitLab CI, automated testing, SonarQube code analysis, Agile/Scrum methodologies, and enterprise architecture.",
+    "skills_covered": ["DevOps", "CI/CD", "GitLab CI", "Automated Testing", "Agile"]
+  },
+  {
+    "course_id": "KM-SEC401",
+    "course_name": "Cloud & Infrastructure Security",
+    "university": "KMUTT",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": ["Computer Networks & Cloud Infrastructure"],
+    "syllabus_description": "Securing cloud environments, AWS IAM policy configuration, network firewalls, zero-trust architecture, and container security scanning.",
+    "skills_covered": ["Cloud Security", "AWS IAM", "Zero Trust", "Container Security"]
+  }
+]

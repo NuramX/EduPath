@@ -1,0 +1,91 @@
+{
+  "Backend / Distributed Systems Engineer": {
+    "description": "Engineers high-throughput backend services, microservices architecture, distributed databases, caching, and message queues.",
+    "core_skills": [
+      "Python",
+      "Go",
+      "Data Structures",
+      "Algorithms",
+      "SQL",
+      "PostgreSQL",
+      "REST APIs",
+      "Docker"
+    ],
+    "advanced_skills": [
+      "Distributed Systems",
+      "gRPC",
+      "Kafka",
+      "Redis",
+      "Kubernetes",
+      "Microservices",
+      "Concurrency",
+      "Rate Limiting"
+    ]
+  },
+  "AI / Data Engineer": {
+    "description": "Architects data pipelines, ETL infrastructure, MLOps, deep learning model deployments, and generative AI systems.",
+    "core_skills": [
+      "Python",
+      "Data Structures",
+      "SQL",
+      "Machine Learning",
+      "Scikit-learn",
+      "Pandas",
+      "Feature Engineering"
+    ],
+    "advanced_skills": [
+      "PyTorch",
+      "Deep Learning",
+      "Transformers",
+      "Apache Airflow",
+      "PySpark",
+      "LLMs",
+      "LangChain",
+      "MLOps",
+      "ETL Pipelines"
+    ]
+  },
+  "Full-Stack Web Architect": {
+    "description": "Designs end-to-end modern web applications, combining frontend client applications with robust backend APIs and cloud deployment.",
+    "core_skills": [
+      "TypeScript",
+      "React",
+      "Node.js",
+      "HTML/CSS",
+      "REST APIs",
+      "SQL",
+      "PostgreSQL"
+    ],
+    "advanced_skills": [
+      "Next.js",
+      "GraphQL",
+      "System Design",
+      "CI/CD",
+      "GitHub Actions",
+      "Docker",
+      "Redis",
+      "Domain-Driven Design"
+    ]
+  },
+  "Cloud & Cybersecurity Engineer": {
+    "description": "Secures cloud infrastructure, implements Zero-Trust network security, automates IaC, and performs vulnerability assessments.",
+    "core_skills": [
+      "TCP/IP",
+      "Linux",
+      "Python",
+      "Docker",
+      "AWS",
+      "Web Security",
+      "OAuth2/JWT"
+    ],
+    "advanced_skills": [
+      "Terraform",
+      "Zero Trust",
+      "Kubernetes Security",
+      "Penetration Testing",
+      "Cryptography",
+      "AWS IAM",
+      "Container Security"
+    ]
+  }
+}
