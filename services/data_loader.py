@@ -22,7 +22,7 @@ def get_universities() -> List[str]:
     courses = load_courses()
     unis = list(dict.fromkeys(c["university"] for c in courses if "university" in c))
     # Keep University A, University B first if present
-    preferred_order = ["University A", "University B", "Chulalongkorn University", "KMUTT"]
+    preferred_order = ["University A", "University B", "Chulalongkorn University", "Thammasat University", "Mahidol University", "KMUTT"]
     sorted_unis = [u for u in preferred_order if u in unis] + [u for u in sorted(unis) if u not in preferred_order]
     return sorted_unis
 

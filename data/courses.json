@@ -5,9 +5,17 @@
     "university": "University A",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["UA-CS201"],
+    "prerequisites": [
+      "UA-CS201"
+    ],
     "syllabus_description": "Comprehensive hands-on training in container orchestration, infrastructure provisioning as code, and automated CI/CD release engineering. Students build production-grade Kubernetes clusters and deploy declarative Terraform scripts.",
-    "skills_covered": ["Docker", "Kubernetes", "CI/CD", "Terraform", "Prometheus/Grafana"]
+    "skills_covered": [
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "Terraform",
+      "Prometheus/Grafana"
+    ]
   },
   {
     "course_id": "UA-OPS301",
@@ -15,9 +23,15 @@
     "university": "University A",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["UA-CS101"],
+    "prerequisites": [
+      "UA-CS101"
+    ],
     "syllabus_description": "In-depth study of POSIX operating system concepts, Linux kernel internals, Bash scripting automation, package managers, network sockets, and system service administration.",
-    "skills_covered": ["Linux", "Git", "TCP/IP"]
+    "skills_covered": [
+      "Linux",
+      "Git",
+      "TCP/IP"
+    ]
   },
   {
     "course_id": "UA-SEC401",
@@ -25,9 +39,16 @@
     "university": "University A",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["UA-CS302"],
+    "prerequisites": [
+      "UA-CS302"
+    ],
     "syllabus_description": "Principles of enterprise application security, OWASP Top 10 mitigation, hands-on penetration testing methodologies, cryptographic protocols, and secure authentication workflows.",
-    "skills_covered": ["Web Security", "Penetration Testing", "Cryptography", "Network Security"]
+    "skills_covered": [
+      "Web Security",
+      "Penetration Testing",
+      "Cryptography",
+      "Network Security"
+    ]
   },
   {
     "course_id": "UA-SEC402",
@@ -35,9 +56,16 @@
     "university": "University A",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["UA-SEC401"],
+    "prerequisites": [
+      "UA-SEC401"
+    ],
     "syllabus_description": "Modern architecture for perimeter-less enterprise security, microsegmentation, AWS IAM policy design, public key infrastructure, and Zero Trust access management.",
-    "skills_covered": ["Zero Trust", "AWS IAM", "Network Security", "TCP/IP"]
+    "skills_covered": [
+      "Zero Trust",
+      "AWS IAM",
+      "Network Security",
+      "TCP/IP"
+    ]
   },
   {
     "course_id": "UA-DS401",
@@ -45,9 +73,18 @@
     "university": "University A",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["UA-CS101", "UA-MATH201"],
+    "prerequisites": [
+      "UA-CS101",
+      "UA-MATH201"
+    ],
     "syllabus_description": "Exploratory data analysis with Pandas, statistical hypothesis testing, feature engineering, and supervised/unsupervised machine learning models using Scikit-learn.",
-    "skills_covered": ["Pandas", "Statistics", "Machine Learning", "Scikit-learn", "Python"]
+    "skills_covered": [
+      "Pandas",
+      "Statistics",
+      "Machine Learning",
+      "Scikit-learn",
+      "Python"
+    ]
   },
   {
     "course_id": "UA-AI401",
@@ -55,9 +92,15 @@
     "university": "University A",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["UA-DS401"],
+    "prerequisites": [
+      "UA-DS401"
+    ],
     "syllabus_description": "Theoretical and applied neural networks, backpropagation calculus, CNNs, RNNs, Transformer architectures, and GPU-accelerated model engineering in PyTorch.",
-    "skills_covered": ["Deep Learning", "PyTorch", "Machine Learning"]
+    "skills_covered": [
+      "Deep Learning",
+      "PyTorch",
+      "Machine Learning"
+    ]
   },
   {
     "course_id": "UA-PM401",
@@ -67,7 +110,12 @@
     "credits": 3,
     "prerequisites": [],
     "syllabus_description": "End-to-end tech product lifecycle management: discovery, user persona interviews, writing Product Requirement Documents (PRDs), backlog management, and sprint planning with Scrum.",
-    "skills_covered": ["Agile", "Scrum", "Product Roadmapping", "User Research"]
+    "skills_covered": [
+      "Agile",
+      "Scrum",
+      "Product Roadmapping",
+      "User Research"
+    ]
   },
   {
     "course_id": "UA-PM402",
@@ -75,9 +123,16 @@
     "university": "University A",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["UA-CS301"],
+    "prerequisites": [
+      "UA-CS301"
+    ],
     "syllabus_description": "Data-informed product decision making through funnel metrics, A/B experimentation, cohort tracking with SQL, and fundamental system design for tech leadership.",
-    "skills_covered": ["Data Analytics", "System Design", "SQL", "Git"]
+    "skills_covered": [
+      "Data Analytics",
+      "System Design",
+      "SQL",
+      "Git"
+    ]
   },
   {
     "course_id": "UA-CS101",
@@ -87,7 +142,11 @@
     "credits": 3,
     "prerequisites": [],
     "syllabus_description": "Introduction to algorithm design and programming concepts using Python and C++.",
-    "skills_covered": ["Python", "C++", "Basic Algorithms"]
+    "skills_covered": [
+      "Python",
+      "C++",
+      "Basic Algorithms"
+    ]
   },
   {
     "course_id": "UA-CS201",
@@ -95,9 +154,14 @@
     "university": "University A",
     "type": "Core",
     "credits": 3,
-    "prerequisites": ["UA-CS101"],
+    "prerequisites": [
+      "UA-CS101"
+    ],
     "syllabus_description": "Linear and non-linear data structures, trees, graphs, sorting, searching, and complexity analysis.",
-    "skills_covered": ["Data Structures", "Algorithms"]
+    "skills_covered": [
+      "Data Structures",
+      "Algorithms"
+    ]
   },
   {
     "course_id": "UA-CS301",
@@ -105,9 +169,14 @@
     "university": "University A",
     "type": "Core",
     "credits": 3,
-    "prerequisites": ["UA-CS101"],
+    "prerequisites": [
+      "UA-CS101"
+    ],
     "syllabus_description": "Relational database modeling, SQL querying, transaction management, and indexing.",
-    "skills_covered": ["SQL", "PostgreSQL"]
+    "skills_covered": [
+      "SQL",
+      "PostgreSQL"
+    ]
   },
   {
     "course_id": "UA-CS302",
@@ -115,20 +184,32 @@
     "university": "University A",
     "type": "Core",
     "credits": 3,
-    "prerequisites": ["UA-CS101"],
+    "prerequisites": [
+      "UA-CS101"
+    ],
     "syllabus_description": "TCP/IP protocols, networking hardware, socket programming, and OS process management.",
-    "skills_covered": ["TCP/IP", "Linux"]
+    "skills_covered": [
+      "TCP/IP",
+      "Linux"
+    ]
   },
-
   {
     "course_id": "UB-OPS401",
     "course_name": "Enterprise DevOps & CI/CD Pipelines",
     "university": "University B",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["UB-CS201"],
+    "prerequisites": [
+      "UB-CS201"
+    ],
     "syllabus_description": "Continuous Integration and Continuous Deployment architecture, containerization with Docker, Kubernetes cluster orchestration, and automated infrastructure as code with Terraform.",
-    "skills_covered": ["CI/CD", "Docker", "Kubernetes", "Terraform", "Git"]
+    "skills_covered": [
+      "CI/CD",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "Git"
+    ]
   },
   {
     "course_id": "UB-OPS402",
@@ -136,9 +217,16 @@
     "university": "University B",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["UB-CS302"],
+    "prerequisites": [
+      "UB-CS302"
+    ],
     "syllabus_description": "Production operations on AWS cloud platform, metric collection with Prometheus, real-time observability dashboards with Grafana, and Linux system reliability engineering.",
-    "skills_covered": ["AWS", "Prometheus/Grafana", "Linux", "Docker"]
+    "skills_covered": [
+      "AWS",
+      "Prometheus/Grafana",
+      "Linux",
+      "Docker"
+    ]
   },
   {
     "course_id": "UB-SEC401",
@@ -146,9 +234,16 @@
     "university": "University B",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["UB-CS302"],
+    "prerequisites": [
+      "UB-CS302"
+    ],
     "syllabus_description": "Enterprise cloud security perimeters, Zero Trust policy enforcement, AWS IAM fine-grained access policies, and enterprise network defense strategies.",
-    "skills_covered": ["Zero Trust", "AWS IAM", "Network Security", "Web Security"]
+    "skills_covered": [
+      "Zero Trust",
+      "AWS IAM",
+      "Network Security",
+      "Web Security"
+    ]
   },
   {
     "course_id": "UB-SEC402",
@@ -156,9 +251,16 @@
     "university": "University B",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["UB-CS302"],
+    "prerequisites": [
+      "UB-CS302"
+    ],
     "syllabus_description": "Hands-on penetration testing methodologies, exploit analysis, public/private key cryptography, hash algorithms, and secure network protocols.",
-    "skills_covered": ["Penetration Testing", "Cryptography", "TCP/IP", "Linux"]
+    "skills_covered": [
+      "Penetration Testing",
+      "Cryptography",
+      "TCP/IP",
+      "Linux"
+    ]
   },
   {
     "course_id": "UB-DS401",
@@ -166,9 +268,17 @@
     "university": "University B",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["UB-CS101"],
+    "prerequisites": [
+      "UB-CS101"
+    ],
     "syllabus_description": "Advanced data manipulation with Pandas, statistical hypothesis testing, feature selection, and predictive modeling algorithms with Scikit-learn.",
-    "skills_covered": ["Pandas", "Statistics", "Machine Learning", "Scikit-learn", "Python"]
+    "skills_covered": [
+      "Pandas",
+      "Statistics",
+      "Machine Learning",
+      "Scikit-learn",
+      "Python"
+    ]
   },
   {
     "course_id": "UB-AI401",
@@ -176,9 +286,15 @@
     "university": "University B",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["UB-DS401"],
+    "prerequisites": [
+      "UB-DS401"
+    ],
     "syllabus_description": "Deep neural networks, backpropagation, CNNs, Transformers, and scalable PyTorch training pipelines for modern machine learning challenges.",
-    "skills_covered": ["Deep Learning", "PyTorch", "Machine Learning"]
+    "skills_covered": [
+      "Deep Learning",
+      "PyTorch",
+      "Machine Learning"
+    ]
   },
   {
     "course_id": "UB-PM401",
@@ -188,7 +304,12 @@
     "credits": 3,
     "prerequisites": [],
     "syllabus_description": "Product discovery frameworks, customer journey mapping, user interviews, backlog prioritization, and Agile Scrum sprint facilitation for technical squads.",
-    "skills_covered": ["Product Roadmapping", "Agile", "Scrum", "User Research"]
+    "skills_covered": [
+      "Product Roadmapping",
+      "Agile",
+      "Scrum",
+      "User Research"
+    ]
   },
   {
     "course_id": "UB-PM402",
@@ -196,9 +317,16 @@
     "university": "University B",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["UB-CS301"],
+    "prerequisites": [
+      "UB-CS301"
+    ],
     "syllabus_description": "Translating user requirements into resilient system design patterns, tracking product metrics and KPIs with SQL queries, and Git collaboration workflows.",
-    "skills_covered": ["System Design", "Data Analytics", "SQL", "Git"]
+    "skills_covered": [
+      "System Design",
+      "Data Analytics",
+      "SQL",
+      "Git"
+    ]
   },
   {
     "course_id": "UB-CS101",
@@ -208,7 +336,11 @@
     "credits": 3,
     "prerequisites": [],
     "syllabus_description": "Problem solving and structured programming techniques using Python and C.",
-    "skills_covered": ["Python", "C++", "Basic Algorithms"]
+    "skills_covered": [
+      "Python",
+      "C++",
+      "Basic Algorithms"
+    ]
   },
   {
     "course_id": "UB-CS201",
@@ -216,9 +348,14 @@
     "university": "University B",
     "type": "Core",
     "credits": 3,
-    "prerequisites": ["UB-CS101"],
+    "prerequisites": [
+      "UB-CS101"
+    ],
     "syllabus_description": "Advanced algorithmic design, recursion, tree/graph algorithms, and Big-O efficiency analysis.",
-    "skills_covered": ["Data Structures", "Algorithms"]
+    "skills_covered": [
+      "Data Structures",
+      "Algorithms"
+    ]
   },
   {
     "course_id": "UB-CS301",
@@ -226,9 +363,14 @@
     "university": "University B",
     "type": "Core",
     "credits": 3,
-    "prerequisites": ["UB-CS101"],
+    "prerequisites": [
+      "UB-CS101"
+    ],
     "syllabus_description": "Relational data structures, SQL optimization, schema normalization, and database transaction consistency.",
-    "skills_covered": ["SQL", "PostgreSQL"]
+    "skills_covered": [
+      "SQL",
+      "PostgreSQL"
+    ]
   },
   {
     "course_id": "UB-CS302",
@@ -236,20 +378,33 @@
     "university": "University B",
     "type": "Core",
     "credits": 3,
-    "prerequisites": ["UB-CS101"],
+    "prerequisites": [
+      "UB-CS101"
+    ],
     "syllabus_description": "TCP/IP protocols, subnetting, network socket architecture, and Linux system services.",
-    "skills_covered": ["TCP/IP", "Linux"]
+    "skills_covered": [
+      "TCP/IP",
+      "Linux"
+    ]
   },
-
   {
     "course_id": "CU-OPS401",
     "course_name": "Cloud Infrastructure & DevOps Automation",
     "university": "Chulalongkorn University",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["CU-CS201"],
+    "prerequisites": [
+      "CU-CS201"
+    ],
     "syllabus_description": "Container orchestration, CI/CD pipeline automation, declarative Terraform scripts, and Prometheus/Grafana system observability.",
-    "skills_covered": ["Docker", "Kubernetes", "CI/CD", "Terraform", "Prometheus/Grafana", "AWS"]
+    "skills_covered": [
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "Terraform",
+      "Prometheus/Grafana",
+      "AWS"
+    ]
   },
   {
     "course_id": "CU-OPS301",
@@ -257,9 +412,15 @@
     "university": "Chulalongkorn University",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["CU-CS101"],
+    "prerequisites": [
+      "CU-CS101"
+    ],
     "syllabus_description": "Linux operating system internals, Bash automation, system services, POSIX APIs, and Git version control.",
-    "skills_covered": ["Linux", "Git", "TCP/IP"]
+    "skills_covered": [
+      "Linux",
+      "Git",
+      "TCP/IP"
+    ]
   },
   {
     "course_id": "CU-SEC401",
@@ -267,9 +428,16 @@
     "university": "Chulalongkorn University",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["CU-CS302"],
+    "prerequisites": [
+      "CU-CS302"
+    ],
     "syllabus_description": "Application security architecture, OWASP Top 10 mitigation, penetration testing methodologies, OAuth2, and cryptography.",
-    "skills_covered": ["Web Security", "Penetration Testing", "Cryptography", "Network Security"]
+    "skills_covered": [
+      "Web Security",
+      "Penetration Testing",
+      "Cryptography",
+      "Network Security"
+    ]
   },
   {
     "course_id": "CU-SEC402",
@@ -277,9 +445,16 @@
     "university": "Chulalongkorn University",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["CU-SEC401"],
+    "prerequisites": [
+      "CU-SEC401"
+    ],
     "syllabus_description": "Perimeter-less architecture, AWS IAM security policies, public key infrastructure, and Zero Trust access management.",
-    "skills_covered": ["Zero Trust", "AWS IAM", "Network Security", "TCP/IP"]
+    "skills_covered": [
+      "Zero Trust",
+      "AWS IAM",
+      "Network Security",
+      "TCP/IP"
+    ]
   },
   {
     "course_id": "CU-DS401",
@@ -287,9 +462,17 @@
     "university": "Chulalongkorn University",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["CU-CS101"],
+    "prerequisites": [
+      "CU-CS101"
+    ],
     "syllabus_description": "Exploratory data analysis with Pandas, statistical hypothesis testing, feature engineering, and Scikit-learn machine learning.",
-    "skills_covered": ["Pandas", "Statistics", "Machine Learning", "Scikit-learn", "Python"]
+    "skills_covered": [
+      "Pandas",
+      "Statistics",
+      "Machine Learning",
+      "Scikit-learn",
+      "Python"
+    ]
   },
   {
     "course_id": "CU-AI401",
@@ -297,9 +480,15 @@
     "university": "Chulalongkorn University",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["CU-DS401"],
+    "prerequisites": [
+      "CU-DS401"
+    ],
     "syllabus_description": "Neural network architectures, backpropagation, CNNs, RNNs/Transformers, PyTorch framework, and GPU model optimization.",
-    "skills_covered": ["Deep Learning", "PyTorch", "Machine Learning"]
+    "skills_covered": [
+      "Deep Learning",
+      "PyTorch",
+      "Machine Learning"
+    ]
   },
   {
     "course_id": "CU-PM401",
@@ -309,7 +498,12 @@
     "credits": 3,
     "prerequisites": [],
     "syllabus_description": "Product discovery, PRD writing, customer research interviews, backlog prioritization, and sprint ceremonies with Scrum.",
-    "skills_covered": ["Agile", "Scrum", "Product Roadmapping", "User Research"]
+    "skills_covered": [
+      "Agile",
+      "Scrum",
+      "Product Roadmapping",
+      "User Research"
+    ]
   },
   {
     "course_id": "CU-PM402",
@@ -317,9 +511,16 @@
     "university": "Chulalongkorn University",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["CU-CS301"],
+    "prerequisites": [
+      "CU-CS301"
+    ],
     "syllabus_description": "Product growth metrics, user funnel analysis, querying analytics with SQL, and fundamental system design principles.",
-    "skills_covered": ["Data Analytics", "System Design", "SQL", "Git"]
+    "skills_covered": [
+      "Data Analytics",
+      "System Design",
+      "SQL",
+      "Git"
+    ]
   },
   {
     "course_id": "CU-CS101",
@@ -329,7 +530,12 @@
     "credits": 3,
     "prerequisites": [],
     "syllabus_description": "Introduction to programming concepts using Python and C++. Fundamental data types, control flows, functions, basic OOP, and algorithmic problem-solving techniques.",
-    "skills_covered": ["Python", "C++", "OOP", "Basic Algorithms"]
+    "skills_covered": [
+      "Python",
+      "C++",
+      "OOP",
+      "Basic Algorithms"
+    ]
   },
   {
     "course_id": "CU-CS201",
@@ -337,9 +543,16 @@
     "university": "Chulalongkorn University",
     "type": "Core",
     "credits": 3,
-    "prerequisites": ["Computer Programming Fundamentals"],
+    "prerequisites": [
+      "Computer Programming Fundamentals"
+    ],
     "syllabus_description": "Arrays, Linked Lists, Stacks, Queues, Trees, Hash Tables, Graphs, Searching, Sorting, Time & Space Complexity Analysis (Big-O notation).",
-    "skills_covered": ["Data Structures", "Algorithms", "Big-O Analysis", "Graph Theory"]
+    "skills_covered": [
+      "Data Structures",
+      "Algorithms",
+      "Big-O Analysis",
+      "Graph Theory"
+    ]
   },
   {
     "course_id": "CU-CS301",
@@ -347,9 +560,17 @@
     "university": "Chulalongkorn University",
     "type": "Core",
     "credits": 3,
-    "prerequisites": ["Data Structures & Algorithm Analysis"],
+    "prerequisites": [
+      "Data Structures & Algorithm Analysis"
+    ],
     "syllabus_description": "Relational Database Management Systems (RDBMS), ER Modeling, Normalization, SQL query optimization, Transactions, ACID properties, and indexing.",
-    "skills_covered": ["PostgreSQL", "SQL", "Database Design", "Transactions", "ACID"]
+    "skills_covered": [
+      "PostgreSQL",
+      "SQL",
+      "Database Design",
+      "Transactions",
+      "ACID"
+    ]
   },
   {
     "course_id": "CU-CS302",
@@ -357,20 +578,36 @@
     "university": "Chulalongkorn University",
     "type": "Core",
     "credits": 3,
-    "prerequisites": ["Computer Programming Fundamentals"],
+    "prerequisites": [
+      "Computer Programming Fundamentals"
+    ],
     "syllabus_description": "OSI model, TCP/IP stack, socket programming, routing algorithms, DNS, HTTP/HTTPS, TLS security, and network performance tuning.",
-    "skills_covered": ["TCP/IP", "HTTP", "Socket Programming", "DNS", "TLS/SSL"]
+    "skills_covered": [
+      "TCP/IP",
+      "HTTP",
+      "Socket Programming",
+      "DNS",
+      "TLS/SSL"
+    ]
   },
-
   {
     "course_id": "KM-SE401",
     "course_name": "Enterprise DevOps & CI/CD Pipelines",
     "university": "KMUTT",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["KM-CPE201"],
+    "prerequisites": [
+      "KM-CPE201"
+    ],
     "syllabus_description": "Continuous Integration and Continuous Deployment pipelines, automated testing, container orchestration with Docker & Kubernetes, and Terraform infrastructure provisioning.",
-    "skills_covered": ["CI/CD", "Docker", "Kubernetes", "Terraform", "Git", "DevOps"]
+    "skills_covered": [
+      "CI/CD",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "Git",
+      "DevOps"
+    ]
   },
   {
     "course_id": "KM-CPE401",
@@ -378,9 +615,16 @@
     "university": "KMUTT",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["KM-CPE302"],
+    "prerequisites": [
+      "KM-CPE302"
+    ],
     "syllabus_description": "Production operations on AWS cloud platform, Prometheus metrics, Grafana observability dashboards, and Linux reliability engineering.",
-    "skills_covered": ["AWS", "Prometheus/Grafana", "Linux", "Docker"]
+    "skills_covered": [
+      "AWS",
+      "Prometheus/Grafana",
+      "Linux",
+      "Docker"
+    ]
   },
   {
     "course_id": "KM-SEC401",
@@ -388,9 +632,16 @@
     "university": "KMUTT",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["KM-CPE302"],
+    "prerequisites": [
+      "KM-CPE302"
+    ],
     "syllabus_description": "Zero Trust architecture, AWS IAM role policies, container runtime security, network perimeter defense, and vulnerability scanning.",
-    "skills_covered": ["Zero Trust", "AWS IAM", "Network Security", "Web Security"]
+    "skills_covered": [
+      "Zero Trust",
+      "AWS IAM",
+      "Network Security",
+      "Web Security"
+    ]
   },
   {
     "course_id": "KM-SEC402",
@@ -398,9 +649,16 @@
     "university": "KMUTT",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["KM-CPE302"],
+    "prerequisites": [
+      "KM-CPE302"
+    ],
     "syllabus_description": "Penetration testing frameworks, network protocol analysis, public key cryptography, symmetric encryption, and incident response.",
-    "skills_covered": ["Penetration Testing", "Cryptography", "TCP/IP", "Linux"]
+    "skills_covered": [
+      "Penetration Testing",
+      "Cryptography",
+      "TCP/IP",
+      "Linux"
+    ]
   },
   {
     "course_id": "KM-DS401",
@@ -408,9 +666,17 @@
     "university": "KMUTT",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["KM-CPE101"],
+    "prerequisites": [
+      "KM-CPE101"
+    ],
     "syllabus_description": "Data wrangling with Pandas, statistical modeling, feature engineering, and supervised/unsupervised machine learning using Scikit-learn.",
-    "skills_covered": ["Pandas", "Statistics", "Machine Learning", "Scikit-learn", "Python"]
+    "skills_covered": [
+      "Pandas",
+      "Statistics",
+      "Machine Learning",
+      "Scikit-learn",
+      "Python"
+    ]
   },
   {
     "course_id": "KM-AI401",
@@ -418,9 +684,15 @@
     "university": "KMUTT",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["KM-DS401"],
+    "prerequisites": [
+      "KM-DS401"
+    ],
     "syllabus_description": "Deep neural networks, PyTorch model training, transformer architectures, and modern representation learning.",
-    "skills_covered": ["Deep Learning", "PyTorch", "Machine Learning"]
+    "skills_covered": [
+      "Deep Learning",
+      "PyTorch",
+      "Machine Learning"
+    ]
   },
   {
     "course_id": "KM-PM401",
@@ -430,7 +702,12 @@
     "credits": 3,
     "prerequisites": [],
     "syllabus_description": "User-centric product discovery, customer interviews, agile sprint execution, backlog management, and roadmap alignment across engineering squads.",
-    "skills_covered": ["Product Roadmapping", "Agile", "Scrum", "User Research"]
+    "skills_covered": [
+      "Product Roadmapping",
+      "Agile",
+      "Scrum",
+      "User Research"
+    ]
   },
   {
     "course_id": "KM-SE402",
@@ -438,9 +715,16 @@
     "university": "KMUTT",
     "type": "Elective",
     "credits": 3,
-    "prerequisites": ["KM-CPE301"],
+    "prerequisites": [
+      "KM-CPE301"
+    ],
     "syllabus_description": "High-level system design patterns, product KPIs, user funnel metrics, data querying with SQL, and collaborative Git version control.",
-    "skills_covered": ["System Design", "Data Analytics", "SQL", "Git"]
+    "skills_covered": [
+      "System Design",
+      "Data Analytics",
+      "SQL",
+      "Git"
+    ]
   },
   {
     "course_id": "KM-CPE101",
@@ -450,7 +734,12 @@
     "credits": 3,
     "prerequisites": [],
     "syllabus_description": "Structured programming in C and Python, pointers, algorithmic reasoning, and clean code principles.",
-    "skills_covered": ["C", "Python", "Problem Solving", "Memory Management"]
+    "skills_covered": [
+      "C",
+      "Python",
+      "Problem Solving",
+      "Memory Management"
+    ]
   },
   {
     "course_id": "KM-CPE201",
@@ -458,9 +747,16 @@
     "university": "KMUTT",
     "type": "Core",
     "credits": 3,
-    "prerequisites": ["KM-CPE101"],
+    "prerequisites": [
+      "KM-CPE101"
+    ],
     "syllabus_description": "Tree algorithms, graph traversal, dynamic programming, and complexity evaluation.",
-    "skills_covered": ["C++", "Data Structures", "Dynamic Programming", "Graph Algorithms"]
+    "skills_covered": [
+      "C++",
+      "Data Structures",
+      "Dynamic Programming",
+      "Graph Algorithms"
+    ]
   },
   {
     "course_id": "KM-CPE301",
@@ -468,9 +764,18 @@
     "university": "KMUTT",
     "type": "Core",
     "credits": 3,
-    "prerequisites": ["KM-CPE101"],
+    "prerequisites": [
+      "KM-CPE101"
+    ],
     "syllabus_description": "Database management systems, SQL queries, NoSQL systems, indexing, and ACID transaction mechanics.",
-    "skills_covered": ["MongoDB", "PostgreSQL", "SQL", "NoSQL", "CAP Theorem", "Sharding"]
+    "skills_covered": [
+      "MongoDB",
+      "PostgreSQL",
+      "SQL",
+      "NoSQL",
+      "CAP Theorem",
+      "Sharding"
+    ]
   },
   {
     "course_id": "KM-CPE302",
@@ -478,8 +783,1226 @@
     "university": "KMUTT",
     "type": "Core",
     "credits": 3,
-    "prerequisites": ["KM-CPE101"],
+    "prerequisites": [
+      "KM-CPE101"
+    ],
     "syllabus_description": "OSI model, TCP/IP protocols, routing, network security, and cloud virtualization.",
-    "skills_covered": ["AWS", "Terraform", "Docker", "Network Security", "Cloud Computing", "TCP/IP"]
+    "skills_covered": [
+      "AWS",
+      "Terraform",
+      "Docker",
+      "Network Security",
+      "Cloud Computing",
+      "TCP/IP"
+    ]
+  },
+  {
+    "course_id": "UA-MED101",
+    "course_name": "Human Anatomy & Systemic Physiology",
+    "university": "University A",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "Fundamental organization of the human body, organ systems, cellular physiology, homeostasis, and basic histological examination.",
+    "skills_covered": [
+      "Anatomy & Physiology",
+      "Medical Ethics",
+      "Patient Care"
+    ]
+  },
+  {
+    "course_id": "UA-MED201",
+    "course_name": "Clinical Diagnostics & Patient Assessment",
+    "university": "University A",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [
+      "UA-MED101"
+    ],
+    "syllabus_description": "Physical examination techniques, history taking, differential diagnostic reasoning, and ethical bedside patient communication.",
+    "skills_covered": [
+      "Clinical Diagnostics",
+      "Patient Care",
+      "Medical Ethics"
+    ]
+  },
+  {
+    "course_id": "UA-MED401",
+    "course_name": "Applied Pharmacology & Evidence-Based Therapeutics",
+    "university": "University A",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UA-MED201"
+    ],
+    "syllabus_description": "Pharmacodynamics, pharmacokinetics, antimicrobial stewardship, rational drug prescription, and meta-analytic evidence appraisal.",
+    "skills_covered": [
+      "Pharmacology",
+      "Evidence-Based Medicine"
+    ]
+  },
+  {
+    "course_id": "UA-MED402",
+    "course_name": "Telemedicine & Digital Health Innovation",
+    "university": "University A",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UA-MED201"
+    ],
+    "syllabus_description": "Remote patient monitoring, digital triage systems, wearable biometric devices, and clinical workflows in digital healthcare.",
+    "skills_covered": [
+      "Telemedicine & Digital Health",
+      "Evidence-Based Medicine"
+    ]
+  },
+  {
+    "course_id": "UA-MED403",
+    "course_name": "Emergency Medicine & Acute Care Protocols",
+    "university": "University A",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UA-MED201"
+    ],
+    "syllabus_description": "Trauma resuscitation, ACLS algorithms, acute triage management, and emergency response decision-making under high cognitive load.",
+    "skills_covered": [
+      "Emergency Medicine",
+      "Patient Care",
+      "Clinical Diagnostics"
+    ]
+  },
+  {
+    "course_id": "UA-PSY101",
+    "course_name": "Foundations of Psychology & Human Behavior",
+    "university": "University A",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "Theories of personality, human cognition, behavioral dynamics, developmental stages, and empathetic therapeutic communication.",
+    "skills_covered": [
+      "Empathy & Active Listening",
+      "Mental Health Ethics"
+    ]
+  },
+  {
+    "course_id": "UA-PSY301",
+    "course_name": "Clinical Psychological Assessment & Psychometrics",
+    "university": "University A",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [
+      "UA-PSY101"
+    ],
+    "syllabus_description": "Standardized psychological testing, psychometric evaluation, clinical interviewing protocols, and behavioral diagnostic reports.",
+    "skills_covered": [
+      "Psychological Assessment",
+      "Empathy & Active Listening",
+      "Mental Health Ethics"
+    ]
+  },
+  {
+    "course_id": "UA-PSY401",
+    "course_name": "Cognitive Behavioral Therapy (CBT) & Counseling",
+    "university": "University A",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UA-PSY301"
+    ],
+    "syllabus_description": "Principles and practice of CBT, cognitive restructuring, exposure therapy, counseling techniques, and therapeutic alliance cultivation.",
+    "skills_covered": [
+      "Cognitive Behavioral Therapy",
+      "Counseling & Psychotherapy"
+    ]
+  },
+  {
+    "course_id": "UA-PSY402",
+    "course_name": "Neuropsychology & Crisis Intervention",
+    "university": "University A",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UA-PSY301"
+    ],
+    "syllabus_description": "Neural correlates of psychological disorders, acute trauma psychological first aid, suicide risk de-escalation, and behavioral telemetry.",
+    "skills_covered": [
+      "Neuropsychology",
+      "Crisis Intervention",
+      "Behavioral Analytics"
+    ]
+  },
+  {
+    "course_id": "UA-LAW101",
+    "course_name": "Legal System, Methodologies & Legal Research",
+    "university": "University A",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "Sources of law, statutory interpretation, judicial precedent analysis, legal citation standards, and comprehensive legal research methods.",
+    "skills_covered": [
+      "Legal Research",
+      "Legal Drafting"
+    ]
+  },
+  {
+    "course_id": "UA-LAW201",
+    "course_name": "General Principles of Contract & Obligations Law",
+    "university": "University A",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [
+      "UA-LAW101"
+    ],
+    "syllabus_description": "Formation of contracts, consideration, breach of contract, remedies, tort liability, and commercial obligation structures.",
+    "skills_covered": [
+      "Contract Law",
+      "Legal Drafting",
+      "Legal Research"
+    ]
+  },
+  {
+    "course_id": "UA-LAW401",
+    "course_name": "Corporate Governance & Commercial Transactions",
+    "university": "University A",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UA-LAW201"
+    ],
+    "syllabus_description": "Corporate entities, fiduciary duties, board governance, commercial contract drafting, and regulatory compliance protocols.",
+    "skills_covered": [
+      "Corporate Governance",
+      "Legal Drafting",
+      "Regulatory Compliance"
+    ]
+  },
+  {
+    "course_id": "UA-LAW402",
+    "course_name": "Mergers & Acquisitions and Commercial Negotiation",
+    "university": "University A",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UA-LAW401"
+    ],
+    "syllabus_description": "Deal structuring in M&A, legal due diligence investigations, shareholder agreements, and cross-border commercial arbitration.",
+    "skills_covered": [
+      "Mergers & Acquisitions",
+      "Negotiation & Arbitration",
+      "Commercial Dispute Resolution"
+    ]
+  },
+  {
+    "course_id": "UA-LAW403",
+    "course_name": "Intellectual Property & Technology Regulation",
+    "university": "University A",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UA-LAW101"
+    ],
+    "syllabus_description": "Patent law, copyright protection for software, trademark litigation, and intellectual property licensing agreements.",
+    "skills_covered": [
+      "Intellectual Property Law",
+      "Patent Drafting"
+    ]
+  },
+  {
+    "course_id": "UA-LAW404",
+    "course_name": "Cyber Law, PDPA & Digital Evidence",
+    "university": "University A",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UA-LAW101"
+    ],
+    "syllabus_description": "Cybercrime legislation, Personal Data Protection Act (PDPA/GDPR compliance), digital forensics admissibility, and AI governance frameworks.",
+    "skills_covered": [
+      "Cyber Law",
+      "PDPA & Data Privacy",
+      "Digital Forensics & Evidence",
+      "AI Regulation & Tech Ethics",
+      "Cross-Border E-Commerce Law"
+    ]
+  },
+  {
+    "course_id": "UA-COMM101",
+    "course_name": "Principles of Visual Storytelling & Media Writing",
+    "university": "University A",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "Narrative structure, screenplay formatting, visual semiotics, audience psychology, and multi-format scriptwriting for digital screens.",
+    "skills_covered": [
+      "Visual Storytelling",
+      "Scriptwriting"
+    ]
+  },
+  {
+    "course_id": "UA-COMM201",
+    "course_name": "Digital Video Production & Cinematography",
+    "university": "University A",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [
+      "UA-COMM101"
+    ],
+    "syllabus_description": "Camera operations, cinematic lighting, field audio recording, post-production editing in Premiere Pro, and color grading in DaVinci Resolve.",
+    "skills_covered": [
+      "Video Production",
+      "Premiere Pro/DaVinci"
+    ]
+  },
+  {
+    "course_id": "UA-COMM401",
+    "course_name": "Social Media Strategy & Viral Content Creation",
+    "university": "University A",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UA-COMM201"
+    ],
+    "syllabus_description": "Platform algorithm reverse engineering, viral content hooks, TikTok/Shorts content pipelines, and demographic audience analytics.",
+    "skills_covered": [
+      "Social Media Strategy",
+      "Audience Analytics",
+      "Viral Content Strategy",
+      "Motion Graphics"
+    ]
+  },
+  {
+    "course_id": "UA-COMM402",
+    "course_name": "Strategic Public Relations & Crisis Communication",
+    "university": "University A",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UA-COMM101"
+    ],
+    "syllabus_description": "Corporate reputation management, press release drafting, rapid crisis response strategies, and media relationship building.",
+    "skills_covered": [
+      "Public Relations",
+      "Crisis Communication",
+      "Corporate Reputation",
+      "Press Conference Management"
+    ]
+  },
+  {
+    "course_id": "UA-COMM403",
+    "course_name": "Brand Storytelling & Integrated Media Planning",
+    "university": "University A",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UA-COMM101"
+    ],
+    "syllabus_description": "Crafting authentic brand narratives, cross-platform media mix planning, influencer marketing campaign execution, and social sentiment telemetry.",
+    "skills_covered": [
+      "Brand Storytelling",
+      "Media Planning",
+      "Influencer Marketing",
+      "Sentiment Analysis"
+    ]
+  },
+  {
+    "course_id": "UA-BUS101",
+    "course_name": "Financial Accounting & Corporate Reporting",
+    "university": "University A",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "Balance sheets, income statements, cash flows, financial ratio analysis, and corporate finance foundations.",
+    "skills_covered": [
+      "Accounting",
+      "Corporate Finance"
+    ]
+  },
+  {
+    "course_id": "UA-BUS401",
+    "course_name": "Financial Modeling & Company Valuation",
+    "university": "University A",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UA-BUS101"
+    ],
+    "syllabus_description": "Discounted cash flow (DCF) modeling, comparable company analysis, LBO structures, scenario stress-testing, and financial forecasting with Excel and Python.",
+    "skills_covered": [
+      "Financial Modeling",
+      "Valuation",
+      "DCF Analysis",
+      "Python for Finance"
+    ]
+  },
+  {
+    "course_id": "UA-BUS402",
+    "course_name": "Investment Portfolio Management & Risk Analysis",
+    "university": "University A",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UA-BUS401"
+    ],
+    "syllabus_description": "Modern portfolio theory, asset allocation strategies, Value-at-Risk (VaR) quantification, hedging derivatives, and quantitative risk management.",
+    "skills_covered": [
+      "Portfolio Management",
+      "Risk Assessment"
+    ]
+  },
+  {
+    "course_id": "UA-BUS403",
+    "course_name": "Digital Marketing Analytics & SEO/SEM",
+    "university": "University A",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "Search engine optimization (SEO), search advertising (Google Ads), Google Analytics 4, customer acquisition funnels, and consumer behavior.",
+    "skills_covered": [
+      "Digital Marketing",
+      "SEO/SEM",
+      "Google Analytics",
+      "Consumer Behavior"
+    ]
+  },
+  {
+    "course_id": "UA-BUS404",
+    "course_name": "Growth Hacking, CRO & Performance Marketing",
+    "university": "University A",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UA-BUS403"
+    ],
+    "syllabus_description": "Rapid A/B experimentation, conversion rate optimization (CRO), paid performance advertising, retention loops, and automated CRM workflows.",
+    "skills_covered": [
+      "Growth Hacking",
+      "Conversion Rate Optimization",
+      "Performance Marketing",
+      "CRM Automation"
+    ]
+  },
+  {
+    "course_id": "UA-DES101",
+    "course_name": "Human-Centered Design Thinking & UX Foundations",
+    "university": "University A",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "Empathy mapping, user interviews, journey mapping, persona building, design heuristics, and iterative problem framing.",
+    "skills_covered": [
+      "Design Thinking",
+      "User Research"
+    ]
+  },
+  {
+    "course_id": "UA-DES301",
+    "course_name": "UI Design Systems & Collaborative Figma",
+    "university": "University A",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [
+      "UA-DES101"
+    ],
+    "syllabus_description": "Design tokens, auto-layout mastery in Figma, component variants, typography scales, accessibility color contrast, and scalable design systems.",
+    "skills_covered": [
+      "Figma",
+      "Design Systems",
+      "Wireframing & Prototyping"
+    ]
+  },
+  {
+    "course_id": "UA-DES401",
+    "course_name": "Interaction Design, Micro-animations & Usability Testing",
+    "university": "University A",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UA-DES301"
+    ],
+    "syllabus_description": "Interactive hi-fi prototyping, micro-interaction states, cognitive load reduction, qualitative usability lab testing, and SUS scoring.",
+    "skills_covered": [
+      "Usability Testing",
+      "Interaction Design",
+      "Information Architecture"
+    ]
+  },
+  {
+    "course_id": "UB-MED101",
+    "course_name": "Integrated Clinical Anatomy & Pathophysiology",
+    "university": "University B",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "Systemic organ function, cellular pathology, clinical manifestation of diseases, and bedside patient observation fundamentals.",
+    "skills_covered": [
+      "Anatomy & Physiology",
+      "Patient Care",
+      "Medical Ethics"
+    ]
+  },
+  {
+    "course_id": "UB-MED201",
+    "course_name": "Applied Clinical Examination & Semi-Structured Diagnostics",
+    "university": "University B",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [
+      "UB-MED101"
+    ],
+    "syllabus_description": "Hands-on diagnostic equipment handling, clinical reasoning, patient history taking, and empathetic bedside manner.",
+    "skills_covered": [
+      "Clinical Diagnostics",
+      "Patient Care"
+    ]
+  },
+  {
+    "course_id": "UB-MED401",
+    "course_name": "Clinical Therapeutics & Pharmacological Regimens",
+    "university": "University B",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UB-MED201"
+    ],
+    "syllabus_description": "Evidence-based pharmacology, drug-drug interaction screening, dosage calculation, and clinical trials methodology.",
+    "skills_covered": [
+      "Pharmacology",
+      "Evidence-Based Medicine"
+    ]
+  },
+  {
+    "course_id": "UB-MED402",
+    "course_name": "Smart Hospital Systems & Tele-Care Operations",
+    "university": "University B",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UB-MED201"
+    ],
+    "syllabus_description": "Implementation of tele-consultations, IoT vital sign telemetry, digital health data interoperability, and emergency triage protocols.",
+    "skills_covered": [
+      "Telemedicine & Digital Health",
+      "Emergency Medicine"
+    ]
+  },
+  {
+    "course_id": "UB-PSY101",
+    "course_name": "Behavioral Sciences & Counseling Foundations",
+    "university": "University B",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "Human motivation, active listening techniques, ethical standards in mental health, and psychodynamic principles.",
+    "skills_covered": [
+      "Empathy & Active Listening",
+      "Mental Health Ethics"
+    ]
+  },
+  {
+    "course_id": "UB-PSY301",
+    "course_name": "Applied Psychometrics & Diagnostic Interviewing",
+    "university": "University B",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [
+      "UB-PSY101"
+    ],
+    "syllabus_description": "Administration of clinical rating scales, cognitive assessments, case formulation, and structured clinical interviews.",
+    "skills_covered": [
+      "Psychological Assessment",
+      "Counseling & Psychotherapy"
+    ]
+  },
+  {
+    "course_id": "UB-PSY401",
+    "course_name": "Evidence-Based Cognitive Behavioral Interventions",
+    "university": "University B",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UB-PSY301"
+    ],
+    "syllabus_description": "Clinical application of CBT, schema therapy principles, mindfulness-based stress reduction, and structured psychotherapy sessions.",
+    "skills_covered": [
+      "Cognitive Behavioral Therapy",
+      "Counseling & Psychotherapy"
+    ]
+  },
+  {
+    "course_id": "UB-PSY402",
+    "course_name": "Crisis De-escalation & Neurobehavioral Dynamics",
+    "university": "University B",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UB-PSY301"
+    ],
+    "syllabus_description": "Psychological crisis management, acute psychiatric emergencies, trauma-informed care, and neurobehavioral evaluation.",
+    "skills_covered": [
+      "Crisis Intervention",
+      "Neuropsychology",
+      "Behavioral Analytics"
+    ]
+  },
+  {
+    "course_id": "UB-LAW101",
+    "course_name": "Legal Reasoning & Comparative Legal Systems",
+    "university": "University B",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "Statutory analysis, case law synthesis, legal research engines, and professional legal memorandum drafting.",
+    "skills_covered": [
+      "Legal Research",
+      "Legal Drafting"
+    ]
+  },
+  {
+    "course_id": "UB-LAW201",
+    "course_name": "Commercial Contracts & Business Obligations",
+    "university": "University B",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [
+      "UB-LAW101"
+    ],
+    "syllabus_description": "Drafting commercial terms, liability waivers, indemnity clauses, performance guarantees, and corporate entity regulation.",
+    "skills_covered": [
+      "Contract Law",
+      "Corporate Governance",
+      "Legal Drafting"
+    ]
+  },
+  {
+    "course_id": "UB-LAW401",
+    "course_name": "Cross-Border Commercial Transactions & M&A Strategy",
+    "university": "University B",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UB-LAW201"
+    ],
+    "syllabus_description": "Mergers and acquisitions legal structuring, asset purchase agreements, joint ventures, and international arbitration procedures.",
+    "skills_covered": [
+      "Mergers & Acquisitions",
+      "Negotiation & Arbitration",
+      "Commercial Dispute Resolution",
+      "Regulatory Compliance"
+    ]
+  },
+  {
+    "course_id": "UB-LAW402",
+    "course_name": "Cyber Law, AI Regulation & IP Protection",
+    "university": "University B",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UB-LAW101"
+    ],
+    "syllabus_description": "Patent drafting for algorithmic innovations, copyright in digital media, PDPA/GDPR compliance audits, and legal tech forensics.",
+    "skills_covered": [
+      "Intellectual Property Law",
+      "Cyber Law",
+      "PDPA & Data Privacy",
+      "Patent Drafting",
+      "Digital Forensics & Evidence",
+      "AI Regulation & Tech Ethics",
+      "Cross-Border E-Commerce Law"
+    ]
+  },
+  {
+    "course_id": "UB-COMM101",
+    "course_name": "Creative Storytelling & Digital Media Production",
+    "university": "University B",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "Non-linear storytelling, digital camera handling, studio audio mixing, and short-form video scriptwriting.",
+    "skills_covered": [
+      "Visual Storytelling",
+      "Video Production",
+      "Scriptwriting"
+    ]
+  },
+  {
+    "course_id": "UB-COMM401",
+    "course_name": "Advanced Post-Production & Motion Graphics",
+    "university": "University B",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UB-COMM101"
+    ],
+    "syllabus_description": "High-end NLE editing with Premiere Pro, Davinci Resolve color workflows, After Effects motion graphics, and audio mastering.",
+    "skills_covered": [
+      "Premiere Pro/DaVinci",
+      "Motion Graphics"
+    ]
+  },
+  {
+    "course_id": "UB-COMM402",
+    "course_name": "Social Media Growth & Viral Content Architectures",
+    "university": "University B",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UB-COMM101"
+    ],
+    "syllabus_description": "Audience retention curves, content distribution engines, short-form viral narrative patterns, and digital creator monetization.",
+    "skills_covered": [
+      "Social Media Strategy",
+      "Audience Analytics",
+      "Viral Content Strategy"
+    ]
+  },
+  {
+    "course_id": "UB-COMM403",
+    "course_name": "Strategic Corporate PR & Crisis Management",
+    "university": "University B",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UB-COMM101"
+    ],
+    "syllabus_description": "Managing corporate communications during high-stakes scandals, media conferences, stakeholder press releases, and executive media coaching.",
+    "skills_covered": [
+      "Public Relations",
+      "Crisis Communication",
+      "Corporate Reputation",
+      "Press Conference Management"
+    ]
+  },
+  {
+    "course_id": "UB-COMM404",
+    "course_name": "Omnichannel Brand Communications & Influencer Ecosystems",
+    "university": "University B",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UB-COMM101"
+    ],
+    "syllabus_description": "Brand identity architecture, integrated PR campaigns, KOL/influencer partnership management, and natural language sentiment analytics.",
+    "skills_covered": [
+      "Brand Storytelling",
+      "Media Planning",
+      "Influencer Marketing",
+      "Sentiment Analysis"
+    ]
+  },
+  {
+    "course_id": "UB-BUS101",
+    "course_name": "Financial Analysis & Managerial Accounting",
+    "university": "University B",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "Capital budgeting, financial statement audits, operational cost accounting, and working capital optimization.",
+    "skills_covered": [
+      "Accounting",
+      "Corporate Finance"
+    ]
+  },
+  {
+    "course_id": "UB-BUS401",
+    "course_name": "Financial Modeling, DCF & Equity Valuation",
+    "university": "University B",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UB-BUS101"
+    ],
+    "syllabus_description": "Three-statement integrated modeling, discounted cash flow valuation, sensitivity tables, and Python algorithmic portfolio backtesting.",
+    "skills_covered": [
+      "Financial Modeling",
+      "Valuation",
+      "DCF Analysis",
+      "Python for Finance"
+    ]
+  },
+  {
+    "course_id": "UB-BUS402",
+    "course_name": "Quantitative Portfolio & Risk Engineering",
+    "university": "University B",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UB-BUS401"
+    ],
+    "syllabus_description": "Multi-factor risk modeling, credit risk assessment, portfolio rebalancing, and quantitative derivative strategies.",
+    "skills_covered": [
+      "Portfolio Management",
+      "Risk Assessment"
+    ]
+  },
+  {
+    "course_id": "UB-BUS403",
+    "course_name": "Performance Marketing & Conversion Optimization",
+    "university": "University B",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "Meta & TikTok ad buying, search engine marketing, landing page CRO, consumer psychographics, and lifecycle CRM automation.",
+    "skills_covered": [
+      "Digital Marketing",
+      "SEO/SEM",
+      "Google Analytics",
+      "Consumer Behavior",
+      "Growth Hacking",
+      "Conversion Rate Optimization",
+      "Performance Marketing",
+      "CRM Automation"
+    ]
+  },
+  {
+    "course_id": "UB-DES101",
+    "course_name": "Design Thinking & User Interaction Foundations",
+    "university": "University B",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "User persona interviews, cognitive walkthroughs, information architecture hierarchies, and rapid wireframing.",
+    "skills_covered": [
+      "Design Thinking",
+      "User Research",
+      "Information Architecture"
+    ]
+  },
+  {
+    "course_id": "UB-DES401",
+    "course_name": "Enterprise Design Systems & Interactive Prototyping in Figma",
+    "university": "University B",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "UB-DES101"
+    ],
+    "syllabus_description": "Advanced Figma component libraries, responsive auto-layout, micro-interaction states, and qualitative usability lab testing.",
+    "skills_covered": [
+      "Figma",
+      "Design Systems",
+      "Wireframing & Prototyping",
+      "Usability Testing",
+      "Interaction Design"
+    ]
+  },
+  {
+    "course_id": "CU-MED301",
+    "course_name": "Clinical Diagnostics & Holistic Patient Care",
+    "university": "Chulalongkorn University",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "Comprehensive bedside clinical diagnosis, patient communication ethics, anatomy physiology correlation, and clinical case seminars.",
+    "skills_covered": [
+      "Clinical Diagnostics",
+      "Anatomy & Physiology",
+      "Patient Care",
+      "Medical Ethics"
+    ]
+  },
+  {
+    "course_id": "CU-MED401",
+    "course_name": "Digital Health, Telemedicine & Advanced Therapeutics",
+    "university": "Chulalongkorn University",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "CU-MED301"
+    ],
+    "syllabus_description": "Digital health platforms, clinical AI triage, pharmacotherapy, evidence-based medicine review, and emergency resuscitation.",
+    "skills_covered": [
+      "Telemedicine & Digital Health",
+      "Pharmacology",
+      "Evidence-Based Medicine",
+      "Emergency Medicine"
+    ]
+  },
+  {
+    "course_id": "CU-LAW301",
+    "course_name": "Corporate Governance & Commercial Contracts",
+    "university": "Chulalongkorn University",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "Contractual obligation principles, legal research rigor, corporate formation, commercial drafting, and regulatory compliance.",
+    "skills_covered": [
+      "Contract Law",
+      "Legal Research",
+      "Corporate Governance",
+      "Legal Drafting",
+      "Regulatory Compliance"
+    ]
+  },
+  {
+    "course_id": "CU-LAW401",
+    "course_name": "Technology Law, Cyber IP & PDPA Compliance",
+    "university": "Chulalongkorn University",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "CU-LAW301"
+    ],
+    "syllabus_description": "Intellectual property patents, digital copyrights, cybersecurity legal mandates, PDPA frameworks, and tech dispute arbitration.",
+    "skills_covered": [
+      "Intellectual Property Law",
+      "Cyber Law",
+      "PDPA & Data Privacy",
+      "Patent Drafting",
+      "Mergers & Acquisitions",
+      "Negotiation & Arbitration",
+      "Commercial Dispute Resolution"
+    ]
+  },
+  {
+    "course_id": "CU-COMM301",
+    "course_name": "Digital Media Production & Brand PR Strategy",
+    "university": "Chulalongkorn University",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "Cross-platform video storytelling, social media algorithms, crisis PR management, influencer relations, and creative writing.",
+    "skills_covered": [
+      "Visual Storytelling",
+      "Video Production",
+      "Scriptwriting",
+      "Social Media Strategy",
+      "Public Relations",
+      "Crisis Communication",
+      "Brand Storytelling",
+      "Media Planning"
+    ]
+  },
+  {
+    "course_id": "CU-COMM402",
+    "course_name": "Viral Media Analytics & Motion Production",
+    "university": "Chulalongkorn University",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "CU-COMM301"
+    ],
+    "syllabus_description": "Audience analytics, Premiere Pro editing, motion graphics, viral distribution blueprints, and reputation sentiment analysis.",
+    "skills_covered": [
+      "Premiere Pro/DaVinci",
+      "Audience Analytics",
+      "Motion Graphics",
+      "Viral Content Strategy",
+      "Influencer Marketing",
+      "Corporate Reputation",
+      "Sentiment Analysis"
+    ]
+  },
+  {
+    "course_id": "CU-BUS301",
+    "course_name": "Corporate Finance & Advanced Financial Modeling",
+    "university": "Chulalongkorn University",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "Three-statement integrated modeling, DCF enterprise valuation, portfolio diversification, risk modeling, and financial accounting.",
+    "skills_covered": [
+      "Financial Modeling",
+      "Valuation",
+      "Accounting",
+      "Corporate Finance",
+      "DCF Analysis",
+      "Portfolio Management",
+      "Risk Assessment",
+      "Python for Finance"
+    ]
+  },
+  {
+    "course_id": "CU-BUS401",
+    "course_name": "Data-Driven Growth Marketing & CRO Strategy",
+    "university": "Chulalongkorn University",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "Search engine optimization, Google Ads funnels, growth hacking experiments, conversion rate optimization, and CRM automation.",
+    "skills_covered": [
+      "Digital Marketing",
+      "SEO/SEM",
+      "Google Analytics",
+      "Consumer Behavior",
+      "Growth Hacking",
+      "Conversion Rate Optimization",
+      "Performance Marketing",
+      "CRM Automation"
+    ]
+  },
+  {
+    "course_id": "CU-DES301",
+    "course_name": "UI/UX Architecture & Design Systems with Figma",
+    "university": "Chulalongkorn University",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "User empathy interviews, Figma design system architecture, wireframing, interaction prototyping, and usability lab evaluations.",
+    "skills_covered": [
+      "Figma",
+      "User Research",
+      "Wireframing & Prototyping",
+      "Design Systems",
+      "Usability Testing",
+      "Interaction Design",
+      "Design Thinking",
+      "Information Architecture"
+    ]
+  },
+  {
+    "course_id": "TU-LAW101",
+    "course_name": "Legal Systems & Advanced Legal Research",
+    "university": "Thammasat University",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "Thammasat signature jurisprudence, constitutional legal methods, statutory interpretation, and legal brief writing.",
+    "skills_covered": [
+      "Legal Research",
+      "Legal Drafting"
+    ]
+  },
+  {
+    "course_id": "TU-LAW201",
+    "course_name": "Contractual Obligations & Business Law",
+    "university": "Thammasat University",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [
+      "TU-LAW101"
+    ],
+    "syllabus_description": "Civil and commercial code contracts, corporate formation, commercial covenants, and corporate governance standards.",
+    "skills_covered": [
+      "Contract Law",
+      "Corporate Governance",
+      "Legal Drafting"
+    ]
+  },
+  {
+    "course_id": "TU-LAW401",
+    "course_name": "Corporate M&A, Commercial Arbitration & Dispute Resolution",
+    "university": "Thammasat University",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "TU-LAW201"
+    ],
+    "syllabus_description": "Legal due diligence in M&A, cross-border contract negotiations, corporate compliance, and international commercial arbitration.",
+    "skills_covered": [
+      "Mergers & Acquisitions",
+      "Negotiation & Arbitration",
+      "Commercial Dispute Resolution",
+      "Regulatory Compliance"
+    ]
+  },
+  {
+    "course_id": "TU-LAW402",
+    "course_name": "Cyber Law, Intellectual Property & Data Protection (PDPA)",
+    "university": "Thammasat University",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "TU-LAW101"
+    ],
+    "syllabus_description": "Copyright and patent regimes, cybercrime jurisprudence, PDPA/GDPR compliance frameworks, digital forensics, and AI ethics policy.",
+    "skills_covered": [
+      "Intellectual Property Law",
+      "Cyber Law",
+      "PDPA & Data Privacy",
+      "Patent Drafting",
+      "Digital Forensics & Evidence",
+      "AI Regulation & Tech Ethics",
+      "Cross-Border E-Commerce Law"
+    ]
+  },
+  {
+    "course_id": "TU-COMM201",
+    "course_name": "Journalistic Storytelling & Multi-Platform Production",
+    "university": "Thammasat University",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "Investigative storytelling, scriptwriting, digital video filming, Premiere Pro editing, and social media news dissemination.",
+    "skills_covered": [
+      "Visual Storytelling",
+      "Video Production",
+      "Scriptwriting",
+      "Social Media Strategy",
+      "Premiere Pro/DaVinci"
+    ]
+  },
+  {
+    "course_id": "TU-COMM401",
+    "course_name": "Strategic Corporate PR, Crisis Management & Brand Advocacy",
+    "university": "Thammasat University",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "TU-COMM201"
+    ],
+    "syllabus_description": "Reputation preservation during organizational crises, press conferences, media planning, influencer marketing, and sentiment analysis.",
+    "skills_covered": [
+      "Public Relations",
+      "Crisis Communication",
+      "Corporate Reputation",
+      "Press Conference Management",
+      "Brand Storytelling",
+      "Media Planning",
+      "Influencer Marketing",
+      "Sentiment Analysis"
+    ]
+  },
+  {
+    "course_id": "TU-COMM402",
+    "course_name": "Viral Media Strategy & Audience Engagement Architecture",
+    "university": "Thammasat University",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "TU-COMM201"
+    ],
+    "syllabus_description": "Viral distribution dynamics, motion graphics design, video retention analytics, and digital brand community building.",
+    "skills_covered": [
+      "Audience Analytics",
+      "Motion Graphics",
+      "Viral Content Strategy"
+    ]
+  },
+  {
+    "course_id": "TU-BUS301",
+    "course_name": "Financial Modeling, Valuation & Capital Markets",
+    "university": "Thammasat University",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "Advanced corporate valuation, discounted cash flows, portfolio investment strategies, risk assessment, and financial accounting.",
+    "skills_covered": [
+      "Financial Modeling",
+      "Valuation",
+      "Accounting",
+      "Corporate Finance",
+      "DCF Analysis",
+      "Portfolio Management",
+      "Risk Assessment",
+      "Python for Finance"
+    ]
+  },
+  {
+    "course_id": "TU-BUS401",
+    "course_name": "Growth Hacking & Full-Funnel Digital Marketing",
+    "university": "Thammasat University",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "Customer acquisition cost optimization, Google Analytics, programmatic performance marketing, CRO testing, and CRM automation.",
+    "skills_covered": [
+      "Digital Marketing",
+      "SEO/SEM",
+      "Google Analytics",
+      "Consumer Behavior",
+      "Growth Hacking",
+      "Conversion Rate Optimization",
+      "Performance Marketing",
+      "CRM Automation"
+    ]
+  },
+  {
+    "course_id": "MU-MED101",
+    "course_name": "Gross Anatomy, Histology & Organ Physiology",
+    "university": "Mahidol University",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "Rigorous anatomical dissection, histological analysis, systemic physiology, and medical ethical foundations at Mahidol Medical Faculty.",
+    "skills_covered": [
+      "Anatomy & Physiology",
+      "Medical Ethics",
+      "Patient Care"
+    ]
+  },
+  {
+    "course_id": "MU-MED201",
+    "course_name": "Clinical Diagnostic Reasoning & Bedside Skills",
+    "university": "Mahidol University",
+    "type": "Core",
+    "credits": 3,
+    "prerequisites": [
+      "MU-MED101"
+    ],
+    "syllabus_description": "Advanced physical examination, holistic diagnostic formulation, bedside clinical communication, and differential diagnosis.",
+    "skills_covered": [
+      "Clinical Diagnostics",
+      "Patient Care",
+      "Medical Ethics"
+    ]
+  },
+  {
+    "course_id": "MU-MED401",
+    "course_name": "Applied Pharmacology, Therapeutics & Evidence-Based Care",
+    "university": "Mahidol University",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "MU-MED201"
+    ],
+    "syllabus_description": "Pharmacological mechanisms, drug interaction auditing, clinical trial review, and evidence-based personalized medicine.",
+    "skills_covered": [
+      "Pharmacology",
+      "Evidence-Based Medicine"
+    ]
+  },
+  {
+    "course_id": "MU-MED402",
+    "course_name": "Tele-Care, Digital Health & Emergency Resuscitation",
+    "university": "Mahidol University",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [
+      "MU-MED201"
+    ],
+    "syllabus_description": "Virtual consultation workflows, remote health monitoring, emergency trauma life support algorithms, and acute patient triage.",
+    "skills_covered": [
+      "Telemedicine & Digital Health",
+      "Emergency Medicine"
+    ]
+  },
+  {
+    "course_id": "MU-PSY301",
+    "course_name": "Clinical Psychological Assessment & Behavioral Therapies",
+    "university": "Mahidol University",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "Psychological battery administration, Cognitive Behavioral Therapy (CBT), active listening, psychotherapy counseling, and crisis triage.",
+    "skills_covered": [
+      "Psychological Assessment",
+      "Counseling & Psychotherapy",
+      "Cognitive Behavioral Therapy",
+      "Empathy & Active Listening",
+      "Crisis Intervention",
+      "Neuropsychology",
+      "Behavioral Analytics",
+      "Mental Health Ethics"
+    ]
+  },
+  {
+    "course_id": "MU-DES301",
+    "course_name": "Healthcare UI/UX Design & Human-Centered Interaction",
+    "university": "Mahidol University",
+    "type": "Elective",
+    "credits": 3,
+    "prerequisites": [],
+    "syllabus_description": "User research with patients and clinicians, Figma prototyping, accessible design systems, and clinical software usability testing.",
+    "skills_covered": [
+      "Figma",
+      "User Research",
+      "Wireframing & Prototyping",
+      "Design Systems",
+      "Usability Testing",
+      "Interaction Design",
+      "Design Thinking",
+      "Information Architecture"
+    ]
   }
 ]

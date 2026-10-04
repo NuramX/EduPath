@@ -1,9 +1,280 @@
 {
+  "Medical Doctor": {
+    "title": "แพทย์ / เวชปฏิบัติและสุขภาพดิจิทัล (Medical Doctor)",
+    "badge": "Medicine",
+    "category": "🩺 การแพทย์และสุขภาพ (Healthcare & Medicine)",
+    "icon": "🩺",
+    "short_desc": "ตรวจวินิจฉัยโรค ดูแลรักษาผู้ป่วย และประยุกต์ใช้เวชศาสตร์ป้องกันและเทคโนโลยีดิจิทัลเฮลธ์",
+    "description": "แพทย์เวชปฏิบัติดูแลรักษาผู้ป่วย ตรวจวินิจฉัยโรค วางแผนการรักษาแบบองค์รวม และส่งเสริมสุขภาวะชุมชน ผสานองค์ความรู้ด้านกายวิภาคศาสตร์ สรีรวิทยา เภสัชวิทยา เวชจริยศาสตร์ และเทคโนโลยีการแพทย์สมัยใหม่ เช่น Telemedicine และระบบสารสนเทศสุขภาพ เพื่อยกระดับความแม่นยำในการรักษา",
+    "required_skills": [
+      "Clinical Diagnostics",
+      "Anatomy & Physiology",
+      "Patient Care",
+      "Medical Ethics",
+      "Pharmacology",
+      "Telemedicine & Digital Health",
+      "Evidence-Based Medicine",
+      "Emergency Medicine"
+    ],
+    "core_skills": [
+      "Clinical Diagnostics",
+      "Anatomy & Physiology",
+      "Patient Care",
+      "Medical Ethics"
+    ],
+    "advanced_skills": [
+      "Pharmacology",
+      "Telemedicine & Digital Health",
+      "Evidence-Based Medicine",
+      "Emergency Medicine"
+    ]
+  },
+  "Clinical Psychologist": {
+    "title": "นักจิตวิทยาคลินิกและการให้คำปรึกษา (Clinical Psychologist)",
+    "badge": "Psychology",
+    "category": "🩺 การแพทย์และสุขภาพ (Healthcare & Medicine)",
+    "icon": "🧠",
+    "short_desc": "ประเมินสุขภาพจิต ให้คำปรึกษาบำบัดทางจิตวิทยา และออกแบบโปรแกรมฟื้นฟูสุขภาวะทางอารมณ์",
+    "description": "นักจิตวิทยาคลินิกเชี่ยวชาญการประเมินภาวะทางจิตวิทยา การทดสอบทางจิตวิทยาคลินิก การบำบัดความคิดและพฤติกรรม (CBT) การให้คำปรึกษารายบุคคลและครอบครัว รวมถึงการรับมือวิกฤตสุขภาพจิต เพื่อช่วยให้ผู้รับบริการเข้าใจตนเองและสามารถดำเนินชีวิตได้อย่างมีความสุข",
+    "required_skills": [
+      "Psychological Assessment",
+      "Counseling & Psychotherapy",
+      "Cognitive Behavioral Therapy",
+      "Empathy & Active Listening",
+      "Crisis Intervention",
+      "Neuropsychology",
+      "Behavioral Analytics",
+      "Mental Health Ethics"
+    ],
+    "core_skills": [
+      "Psychological Assessment",
+      "Counseling & Psychotherapy",
+      "Cognitive Behavioral Therapy",
+      "Empathy & Active Listening"
+    ],
+    "advanced_skills": [
+      "Crisis Intervention",
+      "Neuropsychology",
+      "Behavioral Analytics",
+      "Mental Health Ethics"
+    ]
+  },
+  "Corporate Lawyer": {
+    "title": "นิติกร / ทนายความที่ปรึกษาธุรกิจ (Corporate Lawyer)",
+    "badge": "Corporate Law",
+    "category": "⚖️ กฎหมายและนิติศาสตร์ (Law & Legal)",
+    "icon": "⚖️",
+    "short_desc": "ร่างและตรวจสัญญาธุรกิจ วางโครงสร้างบรรษัทภิบาล และเจรจาไกล่เกลี่ยข้อพิพาทเชิงพาณิชย์",
+    "description": "ที่ปรึกษากฎหมายธุรกิจและทนายความองค์กร ทำหน้าที่ปกป้องผลประโยชน์ทางกฎหมายขององค์กร ร่างและเจรจาสัญญาพาณิชย์ วิเคราะห์ความเสี่ยงด้านกฎหมายการค้า การควบรวมกิจการ (M&A) การปฏิบัติตามกฎเกณฑ์ภาครัฐ (Compliance) และการระงับข้อพิพาททางธุรกิจระหว่างประเทศ",
+    "required_skills": [
+      "Contract Law",
+      "Legal Research",
+      "Corporate Governance",
+      "Legal Drafting",
+      "Mergers & Acquisitions",
+      "Negotiation & Arbitration",
+      "Regulatory Compliance",
+      "Commercial Dispute Resolution"
+    ],
+    "core_skills": [
+      "Contract Law",
+      "Legal Research",
+      "Corporate Governance",
+      "Legal Drafting"
+    ],
+    "advanced_skills": [
+      "Mergers & Acquisitions",
+      "Negotiation & Arbitration",
+      "Regulatory Compliance",
+      "Commercial Dispute Resolution"
+    ]
+  },
+  "Cyber & IP Lawyer": {
+    "title": "ทนายความกฎหมายเทคโนโลยีและทรัพย์สินทางปัญญา (Cyber & IP Lawyer)",
+    "badge": "Tech Law",
+    "category": "⚖️ กฎหมายและนิติศาสตร์ (Law & Legal)",
+    "icon": "📜",
+    "short_desc": "คุ้มครองสิทธิบัตร ลิขสิทธิ์ ซอฟต์แวร์ กฎหมายคุ้มครองข้อมูลส่วนบุคคล (PDPA) และ AI Ethics",
+    "description": "ผู้เชี่ยวชาญด้านกฎหมายดิจิทัลและทรัพย์สินทางปัญญา จัดการการจดทะเบียนสิทธิบัตร/เครื่องหมายการค้า การคุ้มครองลิขสิทธิ์ซอฟต์แวร์ การบังคับใช้กฎหมาย PDPA & GDPR การตรวจสอบความปลอดภัยไซเบอร์ทางกฎหมาย และการให้คำปรึกษาด้านจริยธรรมปัญญาประดิษฐ์ (AI Governance)",
+    "required_skills": [
+      "Intellectual Property Law",
+      "Cyber Law",
+      "PDPA & Data Privacy",
+      "Legal Research",
+      "Patent Drafting",
+      "Digital Forensics & Evidence",
+      "AI Regulation & Tech Ethics",
+      "Cross-Border E-Commerce Law"
+    ],
+    "core_skills": [
+      "Intellectual Property Law",
+      "Cyber Law",
+      "PDPA & Data Privacy",
+      "Legal Research"
+    ],
+    "advanced_skills": [
+      "Patent Drafting",
+      "Digital Forensics & Evidence",
+      "AI Regulation & Tech Ethics",
+      "Cross-Border E-Commerce Law"
+    ]
+  },
+  "Digital Content Creator": {
+    "title": "คอนเทนต์ครีเอเตอร์และโปรดิวเซอร์สื่อดิจิทัล (Digital Content Creator & Producer)",
+    "badge": "Content & Media",
+    "category": "🎬 นิเทศและสื่อดิจิทัล (Communication Arts & Media)",
+    "icon": "🎬",
+    "short_desc": "วางกลยุทธ์คอนเทนต์ สร้างสรรค์เรื่องราว วิดีโอโปรดักชัน และผลิตสื่อดิจิทัลหลายแพลตฟอร์ม",
+    "description": "ครีเอเตอร์และโปรดิวเซอร์สื่อยุคใหม่ที่ขับเคลื่อนการสื่อสารผ่านเรื่องราวที่มีพลัง (Storytelling) เชี่ยวชาญการผลิตวิดีโอ การตัดต่อเสียงและภาพ การเขียนบท การสร้างสรรค์คอนเทนต์สั้นบน TikTok, YouTube, Instagram และการวิเคราะห์กลุ่มผู้ชมเพื่อเพิ่มการมีส่วนร่วมและยอดการเข้าถึง (Viral Engagement)",
+    "required_skills": [
+      "Visual Storytelling",
+      "Video Production",
+      "Scriptwriting",
+      "Social Media Strategy",
+      "Premiere Pro/DaVinci",
+      "Audience Analytics",
+      "Motion Graphics",
+      "Viral Content Strategy"
+    ],
+    "core_skills": [
+      "Visual Storytelling",
+      "Video Production",
+      "Scriptwriting",
+      "Social Media Strategy"
+    ],
+    "advanced_skills": [
+      "Premiere Pro/DaVinci",
+      "Audience Analytics",
+      "Motion Graphics",
+      "Viral Content Strategy"
+    ]
+  },
+  "Strategic PR & Brand Specialist": {
+    "title": "นักกลยุทธ์การประชาสัมพันธ์และการสร้างแบรนด์ (Strategic PR & Brand Strategist)",
+    "badge": "Brand & PR",
+    "category": "🎬 นิเทศและสื่อดิจิทัล (Communication Arts & Media)",
+    "icon": "📢",
+    "short_desc": "ออกแบบภาพลักษณ์แบรนด์ บริหารจัดการภาวะวิกฤต (Crisis PR) และสร้างเครือข่ายสื่อมวลชน",
+    "description": "นักวางกลยุทธ์การสื่อสารประชาสัมพันธ์ที่ดูแลชื่อเสียงองค์กรและแบรนด์ ออกแบบข้อความสื่อสารองค์กร สื่อสารในภาวะวิกฤต (Crisis Communication) ทำงานร่วมกับ Influencer และสื่อมวลชน และวางแผนแคมเปญบูรณาการการสื่อสารการตลาด (IMC) ทั้งออฟไลน์และออนไลน์",
+    "required_skills": [
+      "Public Relations",
+      "Brand Storytelling",
+      "Crisis Communication",
+      "Media Planning",
+      "Influencer Marketing",
+      "Corporate Reputation",
+      "Sentiment Analysis",
+      "Press Conference Management"
+    ],
+    "core_skills": [
+      "Public Relations",
+      "Brand Storytelling",
+      "Crisis Communication",
+      "Media Planning"
+    ],
+    "advanced_skills": [
+      "Influencer Marketing",
+      "Corporate Reputation",
+      "Sentiment Analysis",
+      "Press Conference Management"
+    ]
+  },
+  "Financial Analyst": {
+    "title": "นักวิเคราะห์การเงินและกลยุทธ์การลงทุน (Financial & Investment Analyst)",
+    "badge": "Finance",
+    "category": "💼 ธุรกิจและการเงิน (Business & Finance)",
+    "icon": "📈",
+    "short_desc": "วิเคราะห์งบการเงิน สร้างโมเดลจำลองผลตอบแทน และประเมินมูลค่าสินทรัพย์เพื่อการลงทุน",
+    "description": "นักวิเคราะห์การเงินประเมินศักยภาพการเติบโตของบริษัทและตราสารทุน สร้าง Financial Modeling ใน Excel และ Python เพื่อการประเมินมูลค่ากิจการ (Valuation) วิเคราะห์ความเสี่ยงพอร์ตการลงทุน การวางแผนการจัดหาเงินทุน และการให้คำแนะนำกลยุทธ์ต่อผู้บริหารระดับสูง",
+    "required_skills": [
+      "Financial Modeling",
+      "Valuation",
+      "Accounting",
+      "Corporate Finance",
+      "DCF Analysis",
+      "Portfolio Management",
+      "Risk Assessment",
+      "Python for Finance"
+    ],
+    "core_skills": [
+      "Financial Modeling",
+      "Valuation",
+      "Accounting",
+      "Corporate Finance"
+    ],
+    "advanced_skills": [
+      "DCF Analysis",
+      "Portfolio Management",
+      "Risk Assessment",
+      "Python for Finance"
+    ]
+  },
+  "Digital Marketing & Growth Strategist": {
+    "title": "นักการตลาดดิจิทัลและกลยุทธ์การเติบโต (Digital Marketing & Growth Strategist)",
+    "badge": "Marketing",
+    "category": "💼 ธุรกิจและการเงิน (Business & Finance)",
+    "icon": "🎯",
+    "short_desc": "ขับเคลื่อนยอดขายผ่าน Performance Marketing, SEO/SEM และการทดลอง Conversion Funnel",
+    "description": "ผู้เชี่ยวชาญด้านการตลาดดิจิทัลที่เน้นการเติบโตแบบ Data-Driven ออกแบบแคมเปญโฆษณาออนไลน์บน Meta, Google Ads และ TikTok บริหาร Funnel การได้มาของลูกค้า (CAC & LTV) ทำการทดสอบ A/B Testing และบริหารระบบ CRM เพื่อรักษาความสัมพันธ์ลูกค้าระยะยาว",
+    "required_skills": [
+      "Digital Marketing",
+      "SEO/SEM",
+      "Google Analytics",
+      "Consumer Behavior",
+      "Growth Hacking",
+      "Conversion Rate Optimization",
+      "Performance Marketing",
+      "CRM Automation"
+    ],
+    "core_skills": [
+      "Digital Marketing",
+      "SEO/SEM",
+      "Google Analytics",
+      "Consumer Behavior"
+    ],
+    "advanced_skills": [
+      "Growth Hacking",
+      "Conversion Rate Optimization",
+      "Performance Marketing",
+      "CRM Automation"
+    ]
+  },
+  "UI/UX & Product Designer": {
+    "title": "นักออกแบบประสบการณ์และส่วนต่อประสานผู้ใช้ (UI/UX & Product Designer)",
+    "badge": "Design",
+    "category": "🎨 การออกแบบและความคิดสร้างสรรค์ (Design & Creative)",
+    "icon": "🎨",
+    "short_desc": "ออกแบบอินเทอร์เฟซ ทำวิจัยผู้ใช้ Wireframing และสร้าง Prototype ด้วย Figma ที่ตอบโจทย์การใช้งาน",
+    "description": "นักออกแบบ UI/UX แปลงความต้องการของผู้ใช้งานและความต้องการทางธุรกิจให้เป็นดิจิทัลโปรดักต์ที่สวยงามและใช้งานง่าย ทำการสัมภาษณ์ผู้ใช้ (User Research) สร้าง Design System สเก็ตช์ Wireframe ทดสอบ Usability Testing และส่งมอบงานให้วิศวกรซอฟต์แวร์ได้อย่างไร้รอยต่อ",
+    "required_skills": [
+      "Figma",
+      "User Research",
+      "Wireframing & Prototyping",
+      "Design Systems",
+      "Usability Testing",
+      "Interaction Design",
+      "Design Thinking",
+      "Information Architecture"
+    ],
+    "core_skills": [
+      "Figma",
+      "User Research",
+      "Wireframing & Prototyping",
+      "Design Systems"
+    ],
+    "advanced_skills": [
+      "Usability Testing",
+      "Interaction Design",
+      "Design Thinking",
+      "Information Architecture"
+    ]
+  },
   "DevOps": {
-    "title": "DevOps Engineer",
+    "title": "วิศวกรคลาวด์และเดฟออปส์ (DevOps & Cloud Engineer)",
     "badge": "DevOps",
+    "category": "💻 เทคโนโลยีและวิศวกรรม (Tech & Engineering)",
     "icon": "⚙️",
-    "short_desc": "Automates deployment pipelines, cloud infrastructure, and CI/CD reliability.",
+    "short_desc": "วางระบบไปป์ไลน์อัตโนมัติ โครงสร้างคลาวด์ และเสถียรภาพระบบ CI/CD ระดับองค์กร",
     "description": "DevOps Engineers bridge the gap between software development and IT operations by automating builds, tests, cloud infrastructure provisioning, and continuous deployment pipelines. They maintain high availability, scale containerized microservices with Kubernetes, manage Infrastructure as Code with Terraform, and monitor system health with Prometheus and Grafana.",
     "required_skills": [
       "Git",
@@ -29,11 +300,12 @@
     ]
   },
   "CyberSec": {
-    "title": "Cybersecurity Specialist",
+    "title": "ผู้เชี่ยวชาญความมั่นคงปลอดภัยไซเบอร์ (Cybersecurity Specialist)",
     "badge": "CyberSec",
+    "category": "💻 เทคโนโลยีและวิศวกรรม (Tech & Engineering)",
     "icon": "🛡️",
-    "short_desc": "Defends enterprise systems, mitigates vulnerabilities, and enforces Zero Trust security.",
-    "description": "Cybersecurity Specialists protect enterprise networks, cloud workloads, and sensitive student/enterprise data against modern cyber threats. They conduct ethical penetration testing, implement cryptographic protocols, harden Linux operating systems, design Zero Trust access controls, and manage identity policies using AWS IAM.",
+    "short_desc": "ปกป้องโครงข่ายระบบ ตรวจจับช่องโหว่ ทำ Pentest และวางสถาปัตยกรรม Zero Trust",
+    "description": "Cybersecurity Specialists protect enterprise networks, cloud workloads, and sensitive data against modern cyber threats. They conduct ethical penetration testing, implement cryptographic protocols, harden Linux operating systems, design Zero Trust access controls, and manage identity policies using AWS IAM.",
     "required_skills": [
       "Linux",
       "TCP/IP",
@@ -58,10 +330,11 @@
     ]
   },
   "Data Sci": {
-    "title": "Data Scientist",
+    "title": "นักวิทยาศาสตร์ข้อมูลและแมชชีนเลิร์นนิง (Data Scientist & AI Specialist)",
     "badge": "Data Sci",
+    "category": "💻 เทคโนโลยีและวิศวกรรม (Tech & Engineering)",
     "icon": "📊",
-    "short_desc": "Extracts insights from large-scale data using statistical modeling and machine learning.",
+    "short_desc": "สกัดคุณค่าจากข้อมูลขนาดใหญ่ สร้างโมเดลสถิติ และพัฒนาสถาปัตยกรรม Deep Learning",
     "description": "Data Scientists build machine learning models, statistical inference engines, and predictive analytics pipelines to transform raw data into high-impact strategic decisions. They specialize in feature engineering, supervised/unsupervised learning with Scikit-learn, deep neural architectures with PyTorch, and exploratory data analysis using Pandas and SQL.",
     "required_skills": [
       "Python",
@@ -87,10 +360,11 @@
     ]
   },
   "PM": {
-    "title": "Product Manager",
+    "title": "ผู้จัดการผลิตภัณฑ์เทคโนโลยี (Tech Product Manager)",
     "badge": "PM",
+    "category": "💻 เทคโนโลยีและวิศวกรรม (Tech & Engineering)",
     "icon": "📋",
-    "short_desc": "Drives product strategy, sprint roadmaps, user research, and technical execution.",
+    "short_desc": "กำหนดวิสัยทัศน์ผลิตภัณฑ์ บริหารจัดการสปรินต์ และประสานงานทีมวิศวกรรมกับธุรกิจ",
     "description": "Tech Product Managers align technical architecture with user needs and business strategy. They define product visions, conduct qualitative and quantitative user research, prioritize sprint backlogs with Agile/Scrum methodologies, analyze product usage telemetry with SQL, and communicate technical trade-offs across multidisciplinary squads.",
     "required_skills": [
       "Agile",
@@ -116,11 +390,12 @@
     ]
   },
   "Backend / Distributed Systems Engineer": {
-    "title": "Backend / Distributed Systems Engineer",
+    "title": "วิศวกรระบบแบ็กเอนด์และระบบกระจายศูนย์ (Backend & Distributed Systems)",
     "badge": "Backend",
+    "category": "💻 เทคโนโลยีและวิศวกรรม (Tech & Engineering)",
     "icon": "🖥️",
     "description": "Engineers high-throughput backend services, microservices architecture, distributed databases, caching, and message queues.",
-    "short_desc": "Engineers high-throughput backend services, distributed systems, and databases.",
+    "short_desc": "พัฒนาระบบหลังบ้านความเร็วสูง สถาปัตยกรรม Microservices และฐานข้อมูลขนาดใหญ่",
     "required_skills": [
       "Python",
       "Go",
@@ -151,18 +426,16 @@
       "gRPC",
       "Kafka",
       "Redis",
-      "Kubernetes",
-      "Microservices",
-      "Concurrency",
-      "Rate Limiting"
+      "Kubernetes"
     ]
   },
   "Full-Stack Web Architect": {
-    "title": "Full-Stack Web Architect",
+    "title": "สถาปนิกและนักพัฒนาเว็บฟูลสแตก (Full-Stack Web Architect)",
     "badge": "Full-Stack",
+    "category": "💻 เทคโนโลยีและวิศวกรรม (Tech & Engineering)",
     "icon": "🌐",
     "description": "Designs end-to-end modern web applications, combining frontend client applications with robust backend APIs and cloud deployment.",
-    "short_desc": "Designs modern web apps, frontend clients, APIs, and cloud deployments.",
+    "short_desc": "ออกแบบและพัฒนาเว็บแอปพลิเคชันครบวงจร ทั้ง Frontend สวยงามและ Backend ทรงพลัง",
     "required_skills": [
       "TypeScript",
       "React",
@@ -191,10 +464,7 @@
       "GraphQL",
       "System Design",
       "CI/CD",
-      "GitHub Actions",
-      "Docker",
-      "Redis",
-      "Domain-Driven Design"
+      "Docker"
     ]
   }
 }

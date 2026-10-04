@@ -1,6 +1,16 @@
 from typing import List, Dict, Optional
 from pydantic import BaseModel, Field
 
+class AICareerRecommendation(BaseModel):
+    career_key: str = Field(description="Exact matching key from careers.json, e.g. 'DevOps', 'Data Sci', 'Backend / Distributed Systems Engineer', 'Full-Stack Web Architect', 'CyberSec', 'PM'")
+    fit_badge: str = Field(description="Short badge label highlighting why it fits, e.g. '🔥 Best Match', '⚡ Strong Foundation', '💡 High Growth Pivot'")
+    ai_rationale: str = Field(description="1-2 concise sentences in Thai explaining why this career is a great option for the student's background")
+
+class AICareerRecommendationsResult(BaseModel):
+    recommended_careers: List[AICareerRecommendation] = Field(description="Top 3 to 4 best matching or prospective career choices for this student (do not return all careers, choose the top 3-4 most relevant)")
+    overall_summary: str = Field(description="Brief advisor note in Thai summarizing the student's tech profile strengths and potential")
+
+
 class UniversityComparisonResult(BaseModel):
     target_career: str = Field(description="Target tech role for the comparison")
     focus_areas: Dict[str, str] = Field(

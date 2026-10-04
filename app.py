@@ -9,14 +9,19 @@ from services.gemini_service import compare_universities, analyze_career_gap_and
 from schemas.output_schema import CareerPlanAnalysisResult, UniversityComparisonResult
 from frontend.elective_navigator import render_elective_navigator
 
-load_dotenv()
+load_dotenv(override=True)
+
+def render_html(html_str: str):
+    """Safely render HTML in Streamlit without triggering Markdown indented code block formatting."""
+    cleaned = "\n".join(line.strip() for line in html_str.strip().splitlines())
+    st.markdown(cleaned, unsafe_allow_html=True)
 
 # Streamlit Page Configuration
 st.set_page_config(
     page_title="EduPath Concierge | Biztania Camp 2026",
     page_icon="🎓",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="collapsed"
 )
 
 # Custom High-End Modern Styling
@@ -26,6 +31,11 @@ st.markdown("""
     
     html, body, [class*="css"] {
         font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    
+    /* Completely hide Streamlit sidebar and toggle buttons */
+    [data-testid="stSidebar"], [data-testid="stSidebarCollapseButton"] {
+        display: none !important;
     }
     
     /* Hero Header */
@@ -213,92 +223,16 @@ all_skills = get_all_skills()
 
 # Initialize Session State for Elective Navigator & Demo Presets
 if "user_skills" not in st.session_state:
-    st.session_state["user_skills"] = ["C++", "Python", "SQL", "Git"]
+    st.session_state["user_skills"] = ["Clinical Diagnostics", "Anatomy & Physiology", "Patient Care", "Medical Ethics"]
 if "selected_career" not in st.session_state:
-    st.session_state["selected_career"] = "DevOps"
+    st.session_state["selected_career"] = list(careers.keys())[0]
 if "selected_university" not in st.session_state:
     st.session_state["selected_university"] = universities[0] if universities else "University A"
 if "selected_uni" not in st.session_state:
     st.session_state["selected_uni"] = st.session_state["selected_university"]
 
-# Sidebar Setup
-with st.sidebar:
-    st.image("https://img.icons8.com/color/96/000000/graduation-cap.png", width=60)
-    st.markdown("### **EduPath Concierge**")
-    st.caption("AI-Powered Curriculum-to-Career Alignment")
-    st.caption("🏆 **Biztania Camp 2026 — Engineering Track**")
-    
-    st.divider()
-    
-    st.markdown("#### ⚡ One-Click Demo Presets")
-    st.caption("Select a persona to instantly configure the prototype for judging:")
-    
-    demo_p1 = st.button("⚙️ DevOps (Git, Linux, Docker)", use_container_width=True)
-    if demo_p1:
-        st.session_state["selected_career"] = "DevOps"
-        st.session_state["selected_university"] = "University A"
-        st.session_state["selected_uni"] = "University A"
-        st.session_state["skills_text_input"] = "git, linux, docker, c++"
-        st.session_state["user_skills"] = ["Git", "Linux", "Docker", "C++"]
-        st.session_state["has_generated_careers"] = True
-        st.session_state["navigator_active_tab"] = "💼 1. Career Paths"
-        st.rerun()
-
-    demo_p2 = st.button("🛡️ Cybersecurity (Linux, TCP/IP)", use_container_width=True)
-    if demo_p2:
-        st.session_state["selected_career"] = "CyberSec"
-        st.session_state["selected_university"] = "University A"
-        st.session_state["selected_uni"] = "University A"
-        st.session_state["skills_text_input"] = "linux, tcp/ip, web security"
-        st.session_state["user_skills"] = ["Linux", "TCP/IP", "Web Security"]
-        st.session_state["has_generated_careers"] = True
-        st.session_state["navigator_active_tab"] = "💼 1. Career Paths"
-        st.rerun()
-
-    demo_p3 = st.button("📊 Data Science (Python, SQL, Pandas)", use_container_width=True)
-    if demo_p3:
-        st.session_state["selected_career"] = "Data Sci"
-        st.session_state["selected_university"] = "University B"
-        st.session_state["selected_uni"] = "University B"
-        st.session_state["skills_text_input"] = "python, sql, pandas, statistics"
-        st.session_state["user_skills"] = ["Python", "SQL", "Pandas", "Statistics"]
-        st.session_state["has_generated_careers"] = True
-        st.session_state["navigator_active_tab"] = "💼 1. Career Paths"
-        st.rerun()
-
-    demo_p4 = st.button("📋 Tech PM (Agile, Scrum, Git)", use_container_width=True)
-    if demo_p4:
-        st.session_state["selected_career"] = "PM"
-        st.session_state["selected_university"] = "University B"
-        st.session_state["selected_uni"] = "University B"
-        st.session_state["skills_text_input"] = "agile, scrum, git, marketing"
-        st.session_state["user_skills"] = ["Agile", "Scrum", "Git", "Marketing"]
-        st.session_state["has_generated_careers"] = True
-        st.session_state["navigator_active_tab"] = "💼 1. Career Paths"
-        st.rerun()
-
-    st.divider()
-
-    st.markdown("#### 🔑 LLM API Configuration")
-    default_key = os.getenv("GEMINI_API_KEY", "")
-    user_api_key = st.text_input(
-        "Gemini API Key",
-        value=default_key,
-        type="password",
-        help="Paste your Gemini API key here. The app automatically runs high-fidelity offline mock fallback if blank."
-    )
-    if user_api_key:
-        st.success("🟢 Connected: Gemini 2.5 Flash")
-    else:
-        st.info("🟡 Ingested Context Engine Active (Offline Mode)")
-
-    st.divider()
-    st.markdown("#### 🛡️ Architecture & Integrity")
-    st.markdown("""
-    - **No Vector DB / No RAG**: Ingests full curriculum graphs in-context.
-    - **Zero Chunking Loss**: Complete prerequisite traversal without hallucination.
-    - **Schema Enforced**: Strict Pydantic v2 JSON outputs.
-    """)
+# API Configuration is loaded from environment (.env)
+gemini_api_key = os.getenv("GEMINI_API_KEY", "").strip() or None
 
 # Keep university selection in sync
 if "selected_university" in st.session_state:
@@ -321,7 +255,7 @@ with tab_navigator:
 # =========================================================================
 with tab_compare:
     st.markdown("### 🏛️ Cross-University Curriculum Matchup")
-    st.write("Compare how two universities prepare students for your target career role based on complete course descriptions and electives.")
+    st.write("Compare how two universities prepare students for your target career role based on complete course descriptions and electives across all academic fields.")
 
     c1, c2, c3 = st.columns(3)
     career_keys_tab1 = list(careers.keys())
@@ -329,8 +263,9 @@ with tab_compare:
     idx_t1 = career_keys_tab1.index(sel_car_t1) if sel_car_t1 in career_keys_tab1 else 0
     with c1:
         target_career_tab1 = st.selectbox(
-            "Target Tech Career",
+            "Target Career Role (สายอาชีพเป้าหมาย)",
             options=career_keys_tab1,
+            format_func=lambda k: f"{careers[k].get('icon', '🎯')} {careers[k].get('title', k)}",
             index=idx_t1,
             key="tab1_target_career"
         )
@@ -352,7 +287,7 @@ with tab_compare:
 
     if st.button("🚀 Run Head-to-Head Curriculum Analysis", type="primary", use_container_width=True):
         with st.spinner("Analyzing syllabi and computing curriculum metrics..."):
-            comp_result = compare_universities(target_career_tab1, uni_a, uni_b, api_key=user_api_key)
+            comp_result = compare_universities(target_career_tab1, uni_a, uni_b, api_key=gemini_api_key)
 
             st.markdown(f"#### 📊 Comparative Breakdown: **{target_career_tab1}**")
 
@@ -387,7 +322,7 @@ with tab_compare:
             # Side-by-side Focus & Electives Cards
             col_left, col_right = st.columns(2)
             with col_left:
-                st.markdown(f"""
+                render_html(f"""
                 <div class="feature-card">
                     <h4 style="margin-top:0; color:#0F766E;">🏛️ {uni_a}</h4>
                     <p><strong>Curriculum Core Philosophy:</strong></p>
@@ -398,10 +333,10 @@ with tab_compare:
                         {''.join(f'<li><strong>{el}</strong></li>' for el in comp_result.unique_electives.get(uni_a, []))}
                     </ul>
                 </div>
-                """, unsafe_allow_html=True)
+                """)
 
             with col_right:
-                st.markdown(f"""
+                render_html(f"""
                 <div class="feature-card">
                     <h4 style="margin-top:0; color:#0284C7;">🏛️ {uni_b}</h4>
                     <p><strong>Curriculum Core Philosophy:</strong></p>
@@ -412,7 +347,7 @@ with tab_compare:
                         {''.join(f'<li><strong>{el}</strong></li>' for el in comp_result.unique_electives.get(uni_b, []))}
                     </ul>
                 </div>
-                """, unsafe_allow_html=True)
+                """)
 
             # Tech Stack Differences
             st.markdown("#### 🛠️ Tech Stack & Tooling Exposure")
@@ -420,7 +355,7 @@ with tab_compare:
                 st.markdown(f"- ⚙️ {diff}")
 
             # AI Verdict Card
-            st.markdown(f"""
+            render_html(f"""
             <div class="ai-verdict-card">
                 <h4 style="color:#166534; margin-top:0; display:flex; align-items:center; gap:8px;">
                     💡 EduPath AI Concierge Verdict & Match Rationale
@@ -429,7 +364,7 @@ with tab_compare:
                     {comp_result.verdict}
                 </p>
             </div>
-            """, unsafe_allow_html=True)
+            """)
 
 
 # =========================================================================
@@ -440,8 +375,7 @@ with tab_planner:
     st.write("Diagnose your current readiness for your dream role, check prerequisite bottlenecks, and generate an actionable 3-phase roadmap.")
 
     # Student Profile Form
-    with st.container():
-        st.markdown("<div class='feature-card'>", unsafe_allow_html=True)
+    with st.container(border=True):
         st.markdown("##### 👤 Student Learner Profile (Remember Engine)")
         
         prof_col1, prof_col2 = st.columns(2)
@@ -458,8 +392,9 @@ with tab_planner:
             sel_car_t2 = st.session_state.get("selected_career", career_keys_t2[0])
             car_idx_t2 = career_keys_t2.index(sel_car_t2) if sel_car_t2 in career_keys_t2 else 0
             target_career = st.selectbox(
-                "Target Tech Career",
+                "Target Career Role (สายอาชีพเป้าหมาย)",
                 options=career_keys_t2,
+                format_func=lambda k: f"{careers[k].get('icon', '🎯')} {careers[k].get('title', k)}",
                 index=car_idx_t2,
                 key="tab2_target_career"
             )
@@ -476,8 +411,6 @@ with tab_planner:
             if custom_input:
                 extra_skills = [s.strip() for s in custom_input.split(",") if s.strip()]
                 selected_skills = list(set(selected_skills + extra_skills))
-                
-        st.markdown("</div>", unsafe_allow_html=True)
 
     if st.button("⚡ Run Skill-Gap Diagnostic & Generate Study Plan", type="primary", use_container_width=True):
         with st.spinner("Analyzing skill matrix, checking prerequisite graphs, and synthesizing study roadmap..."):
@@ -485,7 +418,7 @@ with tab_planner:
                 university=current_uni,
                 target_career=target_career,
                 current_skills=selected_skills,
-                api_key=user_api_key
+                api_key=gemini_api_key
             )
 
             st.divider()
@@ -551,7 +484,7 @@ with tab_planner:
             st.markdown("#### 🗺️ 3. 3-Phase Study Plan & Milestone Project")
             
             for phase in plan_result.study_roadmap:
-                st.markdown(f"""
+                render_html(f"""
                 <div class="phase-card">
                     <div style="display:flex; justify-content:space-between; align-items:center;">
                         <h4 style="margin:0; color:#0369A1;">📌 {phase.phase_name}</h4>
@@ -562,15 +495,15 @@ with tab_planner:
                     <p style="margin:8px 0 4px 0; color:#1E293B;"><strong>Recommended Courses:</strong> {', '.join(phase.courses_included)}</p>
                     <p style="margin:0; color:#475569; font-size:0.92rem;"><strong>🎯 Milestone Target:</strong> {phase.milestone_goal}</p>
                 </div>
-                """, unsafe_allow_html=True)
+                """)
 
             if plan_result.portfolio_project:
-                st.markdown(f"""
+                render_html(f"""
                 <div style="background:#FAF5FF; border:1px solid #D8B4FE; border-radius:12px; padding:16px; margin: 15px 0;">
                     <h5 style="color:#6B21A8; margin-top:0;">🚀 Recommended Capstone Portfolio Project</h5>
                     <p style="color:#581C87; margin-bottom:0; font-size:0.98rem;">{plan_result.portfolio_project}</p>
                 </div>
-                """, unsafe_allow_html=True)
+                """)
 
             st.info(f"💡 **AI Concierge Advice:** {plan_result.concierge_advice}")
 
@@ -611,8 +544,13 @@ with tab_explorer:
     exp_col1, exp_col2 = st.columns([1, 2])
     
     with exp_col1:
-        st.markdown("##### 💼 Market Career Taxonomy")
-        selected_career_exp = st.selectbox("Explore Tech Role", options=list(careers.keys()), key="exp_role")
+        st.markdown("##### 💼 Market Career & Competency Taxonomy")
+        selected_career_exp = st.selectbox(
+            "Explore Career Role (เลือกสายอาชีพที่ต้องการสำรวจ)",
+            options=list(careers.keys()),
+            format_func=lambda k: f"{careers[k].get('icon', '🎯')} {careers[k].get('title', k)} ({careers[k].get('badge', k)})",
+            key="exp_role"
+        )
         role_data = careers[selected_career_exp]
         st.markdown(f"**Description:** {role_data.get('description', '')}")
         st.markdown("**Required Core Skills:**")
